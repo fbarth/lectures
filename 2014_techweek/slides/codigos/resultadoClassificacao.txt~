@@ -1,8 +1,0 @@
-Transformando o conjunto de treinamento em um vetor de palavras
-Criando o modelo
-Aplicando o modelo a novos casos
-Mensagem "Meu voto é para X, com certeza!" é classificada como POSITIVA 
-Mensagem "Este produto é muito ruim" é classificada como NEGATIVA
-Mensagem "Nunca mais compro naquela loja!" é classificada como NEGATIVA
-Mensagem "Fulano é um mentiroso!" é classificada como NEGATIVA
-Mensagem "X lidera intenção de voto" é classificada como POSITIVA 
