@@ -1,0 +1,46 @@
+\BOOKMARK [-1][]{1.-1}{Oficina: constru\347\343o de modelos descritivos e preditivos utilizando R}{}% 1
+\BOOKMARK [0][]{2.0}{Objetivo}{1.-1}% 2
+\BOOKMARK [0][]{3.0}{Sum\341rio}{1.-1}% 3
+\BOOKMARK [-1][]{4.-1}{Conceitos}{}% 4
+\BOOKMARK [0][]{5.0}{Knowledge Discovery in Databases \(KDD\)}{4.-1}% 5
+\BOOKMARK [0][]{7.0}{Processo de KDD}{4.-1}% 6
+\BOOKMARK [0][]{8.0}{Aprendizagem de m\341quina}{4.-1}% 7
+\BOOKMARK [0][]{9.0}{Exemplo de dataset com classe}{4.-1}% 8
+\BOOKMARK [0][]{10.0}{Exemplo de modelo preditivo}{4.-1}% 9
+\BOOKMARK [0][]{11.0}{Exemplos de aprendizagem n\343o supervisionada}{4.-1}% 10
+\BOOKMARK [0][]{12.0}{Exemplo de identifica\347\343o de grupos em redes sociais}{4.-1}% 11
+\BOOKMARK [0][]{13.0}{Ferramentas que suportam o processo de KDD}{4.-1}% 12
+\BOOKMARK [0][]{14.0}{Projeto R}{4.-1}% 13
+\BOOKMARK [-1][]{15.-1}{An\341lise de mensagens do twitter usando algoritmos de agrupamento}{}% 14
+\BOOKMARK [0][]{16.0}{Componentes para uma solu\347\343o...}{15.-1}% 15
+\BOOKMARK [0][]{17.0}{Acessar e fazer o download do projeto}{15.-1}% 16
+\BOOKMARK [0][]{18.0}{Formato de um documento}{15.-1}% 17
+\BOOKMARK [0][]{19.0}{Conjunto de Exemplos - Atributo/Valor}{15.-1}% 18
+\BOOKMARK [0][]{20.0}{Atributo/Valor usando vetores}{15.-1}% 19
+\BOOKMARK [0][]{21.0}{Remover stop-words}{15.-1}% 20
+\BOOKMARK [0][]{22.0}{Algoritmos de steamming}{15.-1}% 21
+\BOOKMARK [0][]{23.0}{Atributo/Valor usando vetores}{15.-1}% 22
+\BOOKMARK [0][]{24.0}{Por freq\374\352ncia do termo}{15.-1}% 23
+\BOOKMARK [0][]{25.0}{Componentes para uma solu\347\343o...}{15.-1}% 24
+\BOOKMARK [-1][]{26.-1}{Algoritmos para Agrupamento}{}% 25
+\BOOKMARK [0][]{27.0}{Defini\347\365es de Algoritmos de Agrupamento}{26.-1}% 26
+\BOOKMARK [0][]{28.0}{Algoritmos para Agrupamento - K-means}{26.-1}% 27
+\BOOKMARK [0][]{29.0}{Algoritmo para Agrupamento - K-means}{26.-1}% 28
+\BOOKMARK [0][]{30.0}{Algoritmo K-means}{26.-1}% 29
+\BOOKMARK [0][]{31.0}{}{26.-1}% 30
+\BOOKMARK [0][]{32.0}{Como determinar o melhor k?}{26.-1}% 31
+\BOOKMARK [-1][]{33.-1}{Desenvolvimento de algoritmos anti-spam}{}% 32
+\BOOKMARK [0][]{34.0}{Exemplos onde aplicar}{33.-1}% 33
+\BOOKMARK [0][]{35.0}{}{33.-1}% 34
+\BOOKMARK [0][]{36.0}{Modelos preditivos para classifica\347\343o}{33.-1}% 35
+\BOOKMARK [0][]{37.0}{Desenvolvimento de modelos preditivos para classifica\347\343o}{33.-1}% 36
+\BOOKMARK [0][]{38.0}{Aprendizado de \341rvores de decis\343o}{33.-1}% 37
+\BOOKMARK [0][]{39.0}{Exemplo de classifica\347\343o de Spam}{33.-1}% 38
+\BOOKMARK [0][]{41.0}{Quest\365es...}{33.-1}% 39
+\BOOKMARK [0][]{42.0}{M\351todo para constru\347\343o do modelo: Florestas de \341rvores de decis\343o}{33.-1}% 40
+\BOOKMARK [0][]{43.0}{C\363digo}{33.-1}% 41
+\BOOKMARK [0][]{44.0}{Quest\365es...}{33.-1}% 42
+\BOOKMARK [0][]{45.0}{C\363digo}{33.-1}% 43
+\BOOKMARK [0][]{46.0}{Considera\347\365es finais}{33.-1}% 44
+\BOOKMARK [0][]{48.0}{Material de consulta}{33.-1}% 45
+\BOOKMARK [0][]{50.0}{Refer\352ncias}{33.-1}% 46
