@@ -1,0 +1,334 @@
+\documentclass[landscape,pdftex]{jomislides}
+
+\slidesmag{5} % escala, qto maior maiores serão as letras/figras/etc.
+
+%\centerslidesfalse
+
+\usepackage{algorithmic}
+\usepackage{alltt}
+\usepackage{booktabs}
+\usepackage{algorithm}
+\usepackage{listings}
+
+%
+% Slides
+% ======
+%
+
+
+\begin{document}
+
+%\input{autorHeaders}
+
+\title{Coisas estranhas que podemos fazer com dados coletados em
+  dispositivos móveis: bye-bye privacidade!} 
+\author{Fabrício J. Barth \\ fabricio.barth@gmail.com}
+\institution{Faculdade BandTec e Watson Group IBM}
+\date{Novembro de 2014}
+
+\SlideHeader{}
+            {}
+\SlideFooter{\theslidepartheading $\;$ --- $\;$ \theslideheading}
+            {\theslide}
+
+\vpagecolor[white]{white}
+
+
+\subtitle{Human Activity Recognition}
+
+\maketitle
+
+\begin{PartSlide}{Exemplos de dispositivos e dados que podem ser
+    coletados}
+\end{PartSlide}
+
+\begin{Slide}{Celulares}
+
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.8\columnwidth}{0.7\textheight}
+{\includegraphics{figuras/celular.jpg}}
+%\caption{X}
+%\label{fig:X}
+\end{figure}
+
+\newpage
+
+Coleta informações sobre:
+
+\begin{itemize}
+\item Localização (latitude e longitude); 
+\item Movimentação (acelerômetro, giroscópio);
+\item Ambiente (audio, proximidade, luminosidade);
+\item Social (histórico de ligações, contatos).
+\end{itemize}
+
+\end{Slide}
+
+
+\begin{Slide}{Relógios}
+
+
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.7\columnwidth}{0.8\textheight}
+{\includegraphics{figuras/samsung.png}}
+%\caption{X}
+%\label{fig:X}
+\end{figure}
+
+\newpage
+
+Coleta informações sobre:
+
+\begin{itemize}
+\item Frequência cardíaca;
+\item Pressão arterial.
+\end{itemize}
+\end{Slide}
+
+
+\begin{Slide}{Outras aplicações (talvez menos úteis)}
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.95\columnwidth}{0.8\textheight}
+{\includegraphics{figuras/mulhersensor.jpg}}
+%\caption{X}
+%\label{fig:X}
+\end{figure}
+\end{Slide}
+
+\begin{Slide}{Monitora atividades físicas}
+
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.8\columnwidth}{0.65\textheight}
+{\includegraphics{figuras/cintura.jpg}}
+%\caption{X}
+%\label{fig:X}
+\end{figure}
+
+\newpage
+
+Monitora: 
+
+\begin{itemize}
+\item Que atividade está sendo realizada;
+\item Qual a duração;
+\item Qual a frequência.
+\end{itemize}
+\end{Slide}
+
+
+\begin{Slide}{Disney}
+
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.8\columnwidth}{0.8\textheight}
+{\includegraphics{figuras/disney.jpg}}
+%\caption{X}
+%\label{fig:X}
+\end{figure}
+
+\newpage
+
+Monitora:
+
+\begin{itemize}
+\item Quando entrou e saiu do parque;
+\item Por onde andou;
+\item O que e quando comprou;
+\item Em quais parques foi e quando foi.
+\end{itemize}
+\end{Slide}
+
+\begin{PartSlide}{O que podemos fazer com os dados coletados?}
+\end{PartSlide}
+
+
+\begin{Slide}{Primeiro exemplo de aplicação \cite{ugu2012}}
+
+\begin{figure}[htbp]
+\centering 
+\resizebox*{1\columnwidth}{0.6\textheight}
+{\includegraphics{figuras/har.png}}
+%\caption{X}
+%\label{fig:X}
+\end{figure}
+
+\newpage
+
+O objetivo deste exemplo é construir um classificador capaz de dizer
+que atividade (\textbf{sitting, sitting down, standing, standing up,
+  walking}) uma pessoa está realizando a partir de dados coletados de
+acelerômetros presentes no corpo desta pessoa.
+\end{Slide}
+
+
+\begin{Slide}{Pipeline do processo para reconhecimento de atividades \cite{ang2012}}
+\begin{figure}[htbp]
+\centering 
+\resizebox*{1\columnwidth}{0.35\textheight}
+{\includegraphics{figuras/pipeline.png}}
+\end{figure}
+\end{Slide}
+
+
+\begin{Slide}{Dados coletados e filtrados}
+\begin{itemize}
+\item Dados coletados a partir de 4 tri-axial acelerômetros.
+\item Foram consideradas janelas de tempo de 1 segundo, com
+  overlapping de 150ms.
+\item Medidas de roll, pitch e módulo de aceleração foram adquiridas.
+\item A amostra dentro da janela de tempo foi agrupada e atributos
+  foram gerados (i.e., variância, média).
+\item Foram filtrados 12 atributos finais - três para cada acelerômetro.
+\end{itemize}
+\end{Slide}
+
+
+\begin{Slide}{Construção do classificador}
+\begin{itemize}
+\item O dataset possui 165.633 exemplos e 19 atributos:
+\begin{itemize}
+\item user, gender, age, how\_tall\_in\_meters, weight,
+  body\_mass\_index, $x_{1}$, $y_{1}$, $z_{1}$, $\cdots$, $x_{4}$,
+  $y_{4}$, $z_{4}$, \textbf{class} 
+\end{itemize}
+\item O dataset foi dividido em conjunto de treinamento e teste,
+  respeitando a proporção dos valores do atributo \textbf{class}.
+\end{itemize}
+\small
+Referência: http://rpubs.com/fbarth/har01
+
+\end{Slide}
+
+\begin{Slide}{Alguns resultados da análise descritiva}
+
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.7\columnwidth}{0.8\textheight}
+{\includegraphics{figuras/descritiva01.png}}
+%\caption{X}
+%\label{fig:X}
+\end{figure}
+
+\newpage
+
+
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.7\columnwidth}{0.8\textheight}
+{\includegraphics{figuras/descritiva02.png}}
+%\caption{X}
+%\label{fig:X}
+\end{figure}
+
+\end{Slide}
+
+
+\begin{Slide}{Algoritmo utilizado para criação do modelo: \textbf{Random Forest}}
+
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.7\columnwidth}{0.8\textheight}
+{\includegraphics{figuras/randomForest.png}}
+%\caption{X}
+%\label{fig:X}
+\end{figure}
+\end{Slide}
+
+
+\begin{Slide}{Criando o modelo...}
+
+\begin{figure}[htbp]
+\centering 
+\resizebox*{1\columnwidth}{0.5\textheight}
+{\includegraphics{figuras/resultadoRF01.png}}
+%\caption{X}
+%\label{fig:X}
+\end{figure}
+
+\newpage
+
+
+\begin{figure}[htbp]
+\centering 
+\resizebox*{1\columnwidth}{0.5\textheight}
+{\includegraphics{figuras/resultadoRF02.png}}
+\end{figure}
+
+\newpage
+
+
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.8\columnwidth}{1\textheight}
+{\includegraphics{figuras/erroEstimado01.png}}
+\end{figure}
+
+\newpage
+
+
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.8\columnwidth}{1\textheight}
+{\includegraphics{figuras/importancia01.png}}
+\end{figure}
+
+\end{Slide}
+
+
+\begin{Slide}{Outro modelo}
+
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.5\columnwidth}{0.7\textheight}
+{\includegraphics{figuras/erroEstimado02.png}}
+\end{figure}
+
+\small
+Modelo que utiliza apenas dados do acelerômetro localizado na cintura
+(Erro estimado: 17.12\%)
+
+\end{Slide}
+
+
+
+\begin{Slide}{Validando o modelo completo com o conjunto de testes}
+\begin{figure}[htbp]
+\centering 
+\resizebox*{1\columnwidth}{0.8\textheight}
+{\includegraphics{figuras/resultadoRF03.png}}
+\end{figure}
+\end{Slide}
+
+
+
+\begin{Slide}{Resultados do trabalho original \cite{ugu2012}}
+
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.8\columnwidth}{0.8\textheight}
+{\includegraphics{figuras/resultadoOriginal01.png}}
+%\caption{X}
+%\label{fig:X}
+\end{figure}
+\end{Slide}
+
+
+
+\begin{Slide}{Será que é possível determinar quem está realizando a atividade?}
+\begin{itemize}
+\item 
+\item 
+\end{itemize}
+\end{Slide}
+
+
+
+\bibliographystyle{plain}
+\bibliography{posDoutorado}
+
+\end{document}
+

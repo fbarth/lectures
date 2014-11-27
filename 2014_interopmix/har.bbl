@@ -1,0 +1,22 @@
+\begin{thebibliography}{1}
+
+\bibitem{ang2012}
+Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra, and JorgeL.
+  Reyes-Ortiz.
+\newblock Human activity recognition on smartphones using a multiclass
+  hardware-friendly support vector machine.
+\newblock In José Bravo, Ramón Hervás, and Marcela Rodríguez, editors, {\em
+  Ambient Assisted Living and Home Care}, volume 7657 of {\em Lecture Notes in
+  Computer Science}, pages 216--223. Springer Berlin Heidelberg, 2012.
+
+\bibitem{ugu2012}
+Wallace Ugulino, Débora Cardador, Katia Vega, Eduardo Velloso, Ruy Milidiú, and
+  Hugo Fuks.
+\newblock Wearable computing: Accelerometers' data classification of body
+  postures and movements.
+\newblock In LelianeN. Barros, Marcelo Finger, AuroraT. Pozo, GustavoA.
+  Gimenénez-Lugo, and Marcos Castilho, editors, {\em Advances in Artificial
+  Intelligence - SBIA 2012}, Lecture Notes in Computer Science, pages 52--61.
+  Springer Berlin Heidelberg, 2012.
+
+\end{thebibliography}

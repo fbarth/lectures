@@ -1,0 +1,19 @@
+\BOOKMARK [-1][]{1.-1}{Coisas estranhas que podemos fazer com dados coletados em dispositivos m\363veis: bye-bye privacidade!}{}% 1
+\BOOKMARK [-1][]{2.-1}{Exemplos de dispositivos e dados que podem ser coletados}{}% 2
+\BOOKMARK [0][]{3.0}{Celulares}{2.-1}% 3
+\BOOKMARK [0][]{5.0}{Rel\363gios}{2.-1}% 4
+\BOOKMARK [0][]{7.0}{Outras aplica\347\365es \(talvez menos \372teis\)}{2.-1}% 5
+\BOOKMARK [0][]{8.0}{Monitora atividades f\355sicas}{2.-1}% 6
+\BOOKMARK [0][]{10.0}{Disney}{2.-1}% 7
+\BOOKMARK [-1][]{12.-1}{O que podemos fazer com os dados coletados?}{}% 8
+\BOOKMARK [0][]{13.0}{Primeiro exemplo de aplica\347\343o ugu2012}{12.-1}% 9
+\BOOKMARK [0][]{15.0}{Pipeline do processo para reconhecimento de atividades ang2012}{12.-1}% 10
+\BOOKMARK [0][]{16.0}{Dados coletados e filtrados}{12.-1}% 11
+\BOOKMARK [0][]{17.0}{Constru\347\343o do classificador}{12.-1}% 12
+\BOOKMARK [0][]{18.0}{Alguns resultados da an\341lise descritiva}{12.-1}% 13
+\BOOKMARK [0][]{20.0}{Algoritmo utilizado para cria\347\343o do modelo: Random Forest}{12.-1}% 14
+\BOOKMARK [0][]{21.0}{Criando o modelo...}{12.-1}% 15
+\BOOKMARK [0][]{25.0}{Outro modelo}{12.-1}% 16
+\BOOKMARK [0][]{26.0}{Validando o modelo completo com o conjunto de testes}{12.-1}% 17
+\BOOKMARK [0][]{27.0}{Resultados do trabalho original ugu2012}{12.-1}% 18
+\BOOKMARK [0][]{28.0}{Ser\341 que \351 poss\355vel determinar quem est\341 realizando a atividade?}{12.-1}% 19
