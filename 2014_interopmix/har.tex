@@ -9,6 +9,7 @@
 \usepackage{booktabs}
 \usepackage{algorithm}
 \usepackage{listings}
+\usepackage{hyperref}
 
 %
 % Slides
@@ -199,7 +200,7 @@ acelerômetros presentes no corpo desta pessoa.
   respeitando a proporção dos valores do atributo \textbf{class}.
 \end{itemize}
 \small
-Referência: http://rpubs.com/fbarth/har01
+Referência: \href{http://rpubs.com/fbarth/har01}{http://rpubs.com/fbarth/har01}
 
 \end{Slide}
 
@@ -318,15 +319,186 @@ Modelo que utiliza apenas dados do acelerômetro localizado na cintura
 
 
 
-\begin{Slide}{Será que é possível determinar quem está realizando a atividade?}
-\begin{itemize}
-\item 
-\item 
-\end{itemize}
+\begin{Slide}{Dado o mesmo dataset, será que é possível determinar quem está realizando a atividade?}
+\tiny
+\href{http://fbarth.net.br/humanActivityRecognition/scripts/har\_case01\_user.html}{http://fbarth.net.br/humanActivityRecognition/scripts/har\_case01\_user.html}
 \end{Slide}
 
 
+\begin{Slide}{Segundo exemplo de aplicação \cite{ang2012}}
 
+\small
+Os experimentos foram realizados com um grupo de 30 voluntários entre
+19-48 anos. Cada pessoa executou seis atividades:
+
+\begin{itemize}
+\item \textsc{Walking}: andando
+\item \textsc{Walking\_Upstairs}: andando escada acima
+\item \textsc{Walking\_Downstairs}: andando escada abaixo
+\item \textsc{Sitting}: sentado
+\item \textsc{Standing}: em pé
+\item \textsc{Laying}: deitado
+\end{itemize}
+
+usando um smartphone (Samsung Galaxy II) na cintura.
+
+\newpage
+
+Com base nos sensores do
+smartphone, aceleromêtro e giroscópio, foram capturados a aceleração linear nos
+três eixos e a velocidade angular nos três eixos.
+\end{Slide}
+
+
+\begin{Slide}{Adquirindo os dados}
+
+\begin{figure}[htbp]
+\centering 
+\resizebox*{1\columnwidth}{0.2\textheight}
+{\includegraphics{figuras/case02_01.png}}
+\end{figure}
+
+\href{http://rpubs.com/fbarth/har02}{http://rpubs.com/fbarth/har02}
+
+\end{Slide}
+
+
+\begin{Slide}{Separando os dados}
+
+\begin{figure}[htbp]
+\centering 
+\resizebox*{1\columnwidth}{0.3\textheight}
+{\includegraphics{figuras/case02_02.png}}
+\end{figure}
+
+\end{Slide}
+
+\begin{Slide}{Construindo o modelo}
+
+\begin{figure}[htbp]
+\centering 
+\resizebox*{1\columnwidth}{0.6\textheight}
+{\includegraphics{figuras/case02_03.png}}
+\end{figure}
+
+\end{Slide}
+
+\begin{Slide}{Construindo o modelo}
+
+\begin{figure}[htbp]
+\centering 
+\resizebox*{1\columnwidth}{0.6\textheight}
+{\includegraphics{figuras/case02_04.png}}
+\end{figure}
+
+\end{Slide}
+
+\begin{Slide}{Validando o modelo}
+
+\begin{figure}[htbp]
+\centering 
+\resizebox*{1\columnwidth}{0.7\textheight}
+{\includegraphics{figuras/case02_05.png}}
+\end{figure}
+
+\end{Slide}
+
+
+\begin{Slide}{Comparando com o artigo original \cite{ang2012}}
+
+\begin{figure}[htbp]
+\centering 
+\resizebox*{1\columnwidth}{0.8\textheight}
+{\includegraphics{figuras/case02_06.png}}
+\end{figure}
+\end{Slide}
+
+% Será que é possível identificar o usuário?
+
+% Competição no Kaggle
+
+\begin{PartSlide}{Kaggle: Accelerometer Biometric Competition}
+\end{PartSlide}
+
+
+\begin{Slide}{}
+
+\begin{figure}[htbp]
+\centering 
+\resizebox*{1\columnwidth}{0.9\textheight}
+{\includegraphics{figuras/kaggle.png}}
+\end{figure}
+
+\newpage
+
+
+\begin{figure}[htbp]
+\centering 
+\resizebox*{1\columnwidth}{0.95\textheight}
+{\includegraphics{figuras/kaggle_results.png}}
+\end{figure}
+
+\end{Slide}
+
+% Google fit
+
+\begin{PartSlide}{Google Fit, Google Fit SDK, funf}
+\end{PartSlide}
+
+\begin{Slide}{Google Fit: lançado em 28/10/2014}
+
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.9\columnwidth}{0.6\textheight}
+{\includegraphics{figuras/googlefit.png}}
+\end{figure}
+
+\end{Slide}
+
+
+\begin{Slide}{Google Fit SDK}
+
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.9\columnwidth}{0.6\textheight}
+{\includegraphics{figuras/googlefitsdk.png}}
+\end{figure}
+
+\end{Slide}
+
+
+\begin{Slide}{funf: Open Sensing Framework}
+
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.9\columnwidth}{0.6\textheight}
+{\includegraphics{figuras/funf.png}}
+\end{figure}
+
+
+\end{Slide}
+
+
+% Outras aplicações
+
+
+\begin{PartSlide}{Perguntas?}
+\end{PartSlide}
+
+\begin{Slide}{Obrigado!}
+
+\begin{itemize}
+\item Todo o material (slides e código) aqui apresentado é \textit{Copyleft}
+\item O código fonte é encontrado em
+  \href{http://github.com/fbarth}{http://github.com/fbarth}
+\item Demais materias são encontrado em
+  \href{http://fbarth.net.br}{http://fbarth.net.br}
+\item fabricio dot barth at gmail dot com
+\end{itemize}
+
+\end{Slide}
+
+\tiny
 \bibliographystyle{plain}
 \bibliography{posDoutorado}
 

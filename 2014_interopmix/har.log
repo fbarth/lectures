@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.9.17)  27 NOV 2014 09:09
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.9.17)  28 NOV 2014 19:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -395,20 +395,20 @@ Package: listings 2007/02/22 1.4 (Carsten Heinz)
 (./har.aux)
 \openout1 = `har.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
  (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count132
@@ -438,7 +438,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box63
-Package hyperref Info: Link coloring ON on input line 19.
+Package hyperref Info: Link coloring ON on input line 20.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -448,9 +448,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count138
 )
-LaTeX Info: Redefining \ref on input line 19.
-LaTeX Info: Redefining \pageref on input line 19.
-LaTeX Info: Redefining \nameref on input line 19.
+LaTeX Info: Redefining \ref on input line 20.
+LaTeX Info: Redefining \pageref on input line 20.
+LaTeX Info: Redefining \nameref on input line 20.
 
 (./har.out) (./har.out)
 \@outlinefile=\write4
@@ -475,12 +475,12 @@ en already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.39 \maketitle
+l.40 \maketitle
                {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdfte
 x.map}]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 39.
+(hyperref)                removing `\\' on input line 40.
 
 
 Overfull \hbox (1.83334pt too wide) has occurred while \output is active
@@ -499,12 +499,12 @@ en already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.43 \end{PartSlide}
-                    ] <figuras/celular.jpg, id=91, 574.145pt x 377.41pt>
+l.44 \end{PartSlide}
+                    ] <figuras/celular.jpg, id=155, 574.145pt x 377.41pt>
 File: figuras/celular.jpg Graphic file (type jpg)
 
 <use figuras/celular.jpg>
-Package pdftex.def Info: figuras/celular.jpg used on input line 50.
+Package pdftex.def Info: figuras/celular.jpg used on input line 51.
 (pdftex.def)             Requested size: 574.1436pt x 377.40907pt.
 
 Overfull \hbox (1.83334pt too wide) has occurred while \output is active
@@ -523,7 +523,7 @@ n already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.55 \newpage
+l.56 \newpage
               <./figuras/celular.jpg>]
 Overfull \hbox (1.83334pt too wide) has occurred while \output is active
 [] 
@@ -534,11 +534,11 @@ Overfull \hbox (1.83334pt too wide) has occurred while \output is active
 [][] 
  []
 
-[4] <figuras/samsung.png, id=102, 769.87625pt x 769.87625pt>
+[4] <figuras/samsung.png, id=166, 769.87625pt x 769.87625pt>
 File: figuras/samsung.png Graphic file (type png)
 
 <use figuras/samsung.png>
-Package pdftex.def Info: figuras/samsung.png used on input line 75.
+Package pdftex.def Info: figuras/samsung.png used on input line 76.
 (pdftex.def)             Requested size: 769.87437pt x 769.87437pt.
 
 Overfull \hbox (1.83334pt too wide) has occurred while \output is active
@@ -557,7 +557,7 @@ n already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.80 \newpage
+l.81 \newpage
               <./figuras/samsung.png>]
 Overfull \hbox (1.83334pt too wide) has occurred while \output is active
 [] 
@@ -568,11 +568,11 @@ Overfull \hbox (1.83334pt too wide) has occurred while \output is active
 [][] 
  []
 
-[6] <figuras/mulhersensor.jpg, id=114, 740.0448pt x 493.3632pt>
+[6] <figuras/mulhersensor.jpg, id=178, 740.0448pt x 493.3632pt>
 File: figuras/mulhersensor.jpg Graphic file (type jpg)
 
 <use figuras/mulhersensor.jpg>
-Package pdftex.def Info: figuras/mulhersensor.jpg used on input line 95.
+Package pdftex.def Info: figuras/mulhersensor.jpg used on input line 96.
 (pdftex.def)             Requested size: 740.043pt x 493.362pt.
 
 Overfull \hbox (1.83334pt too wide) has occurred while \output is active
@@ -591,12 +591,12 @@ n already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.99 \end{Slide}
-                 <./figuras/mulhersensor.jpg>]
-<figuras/cintura.jpg, id=121, 1284.8pt x 857.2025pt>
+l.100 \end{Slide}
+                  <./figuras/mulhersensor.jpg>]
+<figuras/cintura.jpg, id=185, 1284.8pt x 857.2025pt>
 File: figuras/cintura.jpg Graphic file (type jpg)
  <use figuras/cintura.jpg>
-Package pdftex.def Info: figuras/cintura.jpg used on input line 106.
+Package pdftex.def Info: figuras/cintura.jpg used on input line 107.
 (pdftex.def)             Requested size: 1284.79688pt x 857.20041pt.
 
 Overfull \hbox (1.83334pt too wide) has occurred while \output is active
@@ -615,7 +615,7 @@ n already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.111 \newpage
+l.112 \newpage
                <./figuras/cintura.jpg>]
 Overfull \hbox (1.83334pt too wide) has occurred while \output is active
 [] 
@@ -626,11 +626,11 @@ Overfull \hbox (1.83334pt too wide) has occurred while \output is active
 [][] 
  []
 
-[9] <figuras/disney.jpg, id=131, 291.0875pt x 230.8625pt>
+[9] <figuras/disney.jpg, id=196, 291.0875pt x 230.8625pt>
 File: figuras/disney.jpg Graphic file (type jpg)
 
 <use figuras/disney.jpg>
-Package pdftex.def Info: figuras/disney.jpg used on input line 128.
+Package pdftex.def Info: figuras/disney.jpg used on input line 129.
 (pdftex.def)             Requested size: 291.08678pt x 230.86192pt.
 
 Overfull \hbox (1.83334pt too wide) has occurred while \output is active
@@ -649,7 +649,7 @@ en already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.133 \newpage
+l.134 \newpage
                <./figuras/disney.jpg>]
 Overfull \hbox (1.83334pt too wide) has occurred while \output is active
 [] 
@@ -677,16 +677,16 @@ een already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.146 \end{PartSlide}
+l.147 \end{PartSlide}
                      ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 149.
+(hyperref)                removing `\@ifnextchar' on input line 150.
 
-<figuras/har.png, id=146, 729.72626pt x 339.2675pt>
+<figuras/har.png, id=211, 729.72626pt x 339.2675pt>
 File: figuras/har.png Graphic file (type png)
  <use figuras/har.png>
-Package pdftex.def Info: figuras/har.png used on input line 154.
+Package pdftex.def Info: figuras/har.png used on input line 155.
 (pdftex.def)             Requested size: 729.72449pt x 339.26666pt.
 
 Overfull \hbox (1.83334pt too wide) has occurred while \output is active
@@ -705,7 +705,7 @@ en already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.159 \newpage
+l.160 \newpage
                <./figuras/har.png>]
 Overfull \hbox (1.83334pt too wide) has occurred while \output is active
 [] 
@@ -719,13 +719,13 @@ Overfull \hbox (1.83334pt too wide) has occurred while \output is active
 [14]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 168.
+(hyperref)                removing `\@ifnextchar' on input line 169.
 
-<figuras/pipeline.png, id=166, 1201.48875pt x 275.0275pt>
+<figuras/pipeline.png, id=231, 1201.48875pt x 275.0275pt>
 File: figuras/pipeline.png Graphic file (type png)
 
 <use figuras/pipeline.png>
-Package pdftex.def Info: figuras/pipeline.png used on input line 172.
+Package pdftex.def Info: figuras/pipeline.png used on input line 173.
 (pdftex.def)             Requested size: 1201.48584pt x 275.02682pt.
 
 Overfull \hbox (1.83334pt too wide) has occurred while \output is active
@@ -744,7 +744,7 @@ en already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.174 \end{Slide}
+l.175 \end{Slide}
                   <./figuras/pipeline.png>]
 Overfull \hbox (1.83334pt too wide) has occurred while \output is active
 [] 
@@ -762,7 +762,7 @@ en already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.187 \end{Slide}
+l.188 \end{Slide}
                  ]
 Overfull \hbox (1.83334pt too wide) has occurred while \output is active
 [] 
@@ -780,12 +780,12 @@ en already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.204 \end{Slide}
-                 ] <figuras/descritiva01.png, id=190, 505.89pt x 505.89pt>
+l.205 \end{Slide}
+                 ] <figuras/descritiva01.png, id=255, 505.89pt x 505.89pt>
 File: figuras/descritiva01.png Graphic file (type png)
 
 <use figuras/descritiva01.png>
-Package pdftex.def Info: figuras/descritiva01.png used on input line 211.
+Package pdftex.def Info: figuras/descritiva01.png used on input line 212.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
 Overfull \hbox (1.83334pt too wide) has occurred while \output is active
@@ -804,13 +804,13 @@ en already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.216 \newpage
+l.217 \newpage
                <./figuras/descritiva01.png>]
-<figuras/descritiva02.png, id=197, 505.89pt x 505.89pt>
+<figuras/descritiva02.png, id=262, 505.89pt x 505.89pt>
 File: figuras/descritiva02.png Graphic file (type png)
 
 <use figuras/descritiva02.png>
-Package pdftex.def Info: figuras/descritiva02.png used on input line 222.
+Package pdftex.def Info: figuras/descritiva02.png used on input line 223.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
 Overfull \hbox (1.83334pt too wide) has occurred while \output is active
@@ -823,15 +823,15 @@ Overfull \hbox (1.83334pt too wide) has occurred while \output is active
  []
 
 [19 <./figuras/descritiva02.png>]
-<figuras/randomForest.png, id=204, 502.87875pt x 435.6275pt>
+<figuras/randomForest.png, id=269, 502.87875pt x 435.6275pt>
 File: figuras/randomForest.png Graphic file (type png)
 
 <use figuras/randomForest.png>
-Package pdftex.def Info: figuras/randomForest.png used on input line 235.
+Package pdftex.def Info: figuras/randomForest.png used on input line 236.
 (pdftex.def)             Requested size: 502.87752pt x 435.62643pt.
 
 
-LaTeX Warning: Slide 20 overfull by 8.46034pt on input line 239.
+LaTeX Warning: Slide 20 overfull by 8.46034pt on input line 240.
 
 
 Overfull \vbox (3.20593pt too high) has occurred while \output is active []
@@ -853,13 +853,13 @@ en already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.239 \end{Slide}
+l.240 \end{Slide}
                   <./figuras/randomForest.png>]
-<figuras/resultadoRF01.png, id=210, 1209.51875pt x 406.51875pt>
+<figuras/resultadoRF01.png, id=275, 1209.51875pt x 406.51875pt>
 File: figuras/resultadoRF01.png Graphic file (type png)
 
 <use figuras/resultadoRF01.png>
-Package pdftex.def Info: figuras/resultadoRF01.png used on input line 247.
+Package pdftex.def Info: figuras/resultadoRF01.png used on input line 248.
 (pdftex.def)             Requested size: 1209.51581pt x 406.51775pt.
 
 Overfull \hbox (1.83334pt too wide) has occurred while \output is active
@@ -878,13 +878,13 @@ en already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.252 \newpage
+l.253 \newpage
                <./figuras/resultadoRF01.png>]
-<figuras/resultadoRF02.png, id=217, 1206.5075pt x 442.65375pt>
+<figuras/resultadoRF02.png, id=282, 1206.5075pt x 442.65375pt>
 File: figuras/resultadoRF02.png Graphic file (type png)
 
 <use figuras/resultadoRF02.png>
-Package pdftex.def Info: figuras/resultadoRF02.png used on input line 258.
+Package pdftex.def Info: figuras/resultadoRF02.png used on input line 259.
 (pdftex.def)             Requested size: 1206.50456pt x 442.65265pt.
 
 Overfull \hbox (1.83334pt too wide) has occurred while \output is active
@@ -897,15 +897,15 @@ Overfull \hbox (1.83334pt too wide) has occurred while \output is active
  []
 
 [22 <./figuras/resultadoRF02.png>]
-<figuras/erroEstimado01.png, id=223, 505.89pt x 505.89pt>
+<figuras/erroEstimado01.png, id=288, 505.89pt x 505.89pt>
 File: figuras/erroEstimado01.png Graphic file (type png)
 
 <use figuras/erroEstimado01.png>
-Package pdftex.def Info: figuras/erroEstimado01.png used on input line 267.
+Package pdftex.def Info: figuras/erroEstimado01.png used on input line 268.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
 
-LaTeX Warning: Slide 23 overfull by 5.99947pt on input line 270.
+LaTeX Warning: Slide 23 overfull by 5.99947pt on input line 271.
 
 
 Overfull \vbox (3.99947pt too high) has occurred while \output is active []
@@ -921,15 +921,15 @@ Overfull \hbox (1.83334pt too wide) has occurred while \output is active
  []
 
 [23 <./figuras/erroEstimado01.png>]
-<figuras/importancia01.png, id=229, 505.89pt x 505.89pt>
+<figuras/importancia01.png, id=294, 505.89pt x 505.89pt>
 File: figuras/importancia01.png Graphic file (type png)
 
 <use figuras/importancia01.png>
-Package pdftex.def Info: figuras/importancia01.png used on input line 276.
+Package pdftex.def Info: figuras/importancia01.png used on input line 277.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
 
-LaTeX Warning: Slide 24 overfull by 5.99947pt on input line 279.
+LaTeX Warning: Slide 24 overfull by 5.99947pt on input line 280.
 
 
 Overfull \vbox (3.99947pt too high) has occurred while \output is active []
@@ -945,15 +945,15 @@ Overfull \hbox (1.83334pt too wide) has occurred while \output is active
  []
 
 [24 <./figuras/importancia01.png>]
-<figuras/erroEstimado02.png, id=235, 505.89pt x 505.89pt>
+<figuras/erroEstimado02.png, id=300, 505.89pt x 505.89pt>
 File: figuras/erroEstimado02.png Graphic file (type png)
 
 <use figuras/erroEstimado02.png>
-Package pdftex.def Info: figuras/erroEstimado02.png used on input line 287.
+Package pdftex.def Info: figuras/erroEstimado02.png used on input line 288.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
 
-LaTeX Warning: Slide 25 overfull by 8.39816pt on input line 294.
+LaTeX Warning: Slide 25 overfull by 8.39816pt on input line 295.
 
 
 Overfull \hbox (1.83334pt too wide) has occurred while \output is active
@@ -972,17 +972,17 @@ en already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.294 \end{Slide}
+l.295 \end{Slide}
                   <./figuras/erroEstimado02.png>]
-<figuras/resultadoRF03.png, id=243, 841.1425pt x 466.74374pt>
+<figuras/resultadoRF03.png, id=308, 841.1425pt x 466.74374pt>
 File: figuras/resultadoRF03.png Graphic file (type png)
 
 <use figuras/resultadoRF03.png>
-Package pdftex.def Info: figuras/resultadoRF03.png used on input line 302.
+Package pdftex.def Info: figuras/resultadoRF03.png used on input line 303.
 (pdftex.def)             Requested size: 841.14046pt x 466.7426pt.
 
 
-LaTeX Warning: Slide 26 overfull by 5.26176pt on input line 304.
+LaTeX Warning: Slide 26 overfull by 5.26176pt on input line 305.
 
 
 Overfull \vbox (2.00735pt too high) has occurred while \output is active []
@@ -1004,17 +1004,17 @@ en already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.304 \end{Slide}
+l.305 \end{Slide}
                   <./figuras/resultadoRF03.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 308.
+(hyperref)                removing `\@ifnextchar' on input line 309.
 
-<figuras/resultadoOriginal01.png, id=251, 562.1pt x 367.3725pt>
+<figuras/resultadoOriginal01.png, id=316, 562.1pt x 367.3725pt>
 File: figuras/resultadoOriginal01.png Graphic file (type png)
 
 <use figuras/resultadoOriginal01.png>
-Package pdftex.def Info: figuras/resultadoOriginal01.png used on input line 313
+Package pdftex.def Info: figuras/resultadoOriginal01.png used on input line 314
 .
 (pdftex.def)             Requested size: 562.09863pt x 367.37158pt.
 
@@ -1034,7 +1034,7 @@ en already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.317 \end{Slide}
+l.318 \end{Slide}
                   <./figuras/resultadoOriginal01.png>]
 Overfull \hbox (1.83334pt too wide) has occurred while \output is active
 [] 
@@ -1045,6 +1045,10 @@ Overfull \hbox (1.83334pt too wide) has occurred while \output is active
 [][] 
  []
 
+
+Overfull \vbox (0.57188pt too high) has occurred while \output is active []
+
+
 [28
 
 pdfTeX warning (ext4): destination with the same identifier (name{28.0}) has be
@@ -1052,42 +1056,425 @@ en already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.326 \end{Slide}
-                 ] (./har.bbl
+l.325 \end{Slide}
+                 ]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 328.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 335.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 335.
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <9> not available
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 335.
+
+
+LaTeX Warning: Slide 29 overfull by 9.27998pt on input line 345.
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[29
+
+pdfTeX warning (ext4): destination with the same identifier (name{29.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.345 \newpage
+              ]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[30] <figuras/case02_01.png, id=351, 1204.5pt x 117.43875pt>
+File: figuras/case02_01.png Graphic file (type png)
+
+<use figuras/case02_01.png>
+Package pdftex.def Info: figuras/case02_01.png used on input line 358.
+(pdftex.def)             Requested size: 1204.49707pt x 117.43845pt.
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[31
+
+pdfTeX warning (ext4): destination with the same identifier (name{31.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.363 \end{Slide}
+                  <./figuras/case02_01.png>]
+<figuras/case02_02.png, id=360, 710.655pt x 117.43875pt>
+File: figuras/case02_02.png Graphic file (type png)
+
+<use figuras/case02_02.png>
+Package pdftex.def Info: figuras/case02_02.png used on input line 371.
+(pdftex.def)             Requested size: 710.65326pt x 117.43845pt.
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[32
+
+pdfTeX warning (ext4): destination with the same identifier (name{32.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.374 \end{Slide}
+                  <./figuras/case02_02.png>]
+<figuras/case02_03.png, id=367, 1088.065pt x 378.41376pt>
+File: figuras/case02_03.png Graphic file (type png)
+
+<use figuras/case02_03.png>
+Package pdftex.def Info: figuras/case02_03.png used on input line 381.
+(pdftex.def)             Requested size: 1088.06236pt x 378.41283pt.
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[33
+
+pdfTeX warning (ext4): destination with the same identifier (name{33.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.384 \end{Slide}
+                  <./figuras/case02_03.png>]
+<figuras/case02_04.png, id=374, 1205.50375pt x 460.72125pt>
+File: figuras/case02_04.png Graphic file (type png)
+
+<use figuras/case02_04.png>
+Package pdftex.def Info: figuras/case02_04.png used on input line 391.
+(pdftex.def)             Requested size: 1205.50082pt x 460.72012pt.
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[34
+
+pdfTeX warning (ext4): destination with the same identifier (name{34.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.394 \end{Slide}
+                  <./figuras/case02_04.png>]
+<figuras/case02_05.png, id=381, 774.895pt x 487.8225pt>
+File: figuras/case02_05.png Graphic file (type png)
+
+<use figuras/case02_05.png>
+Package pdftex.def Info: figuras/case02_05.png used on input line 401.
+(pdftex.def)             Requested size: 774.89311pt x 487.8213pt.
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[35
+
+pdfTeX warning (ext4): destination with the same identifier (name{35.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.404 \end{Slide}
+                  <./figuras/case02_05.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 407.
+
+<figuras/case02_06.png, id=389, 823.075pt x 436.63126pt>
+File: figuras/case02_06.png Graphic file (type png)
+
+<use figuras/case02_06.png>
+Package pdftex.def Info: figuras/case02_06.png used on input line 412.
+(pdftex.def)             Requested size: 823.07298pt x 436.63019pt.
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[36
+
+pdfTeX warning (ext4): destination with the same identifier (name{36.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.414 \end{Slide}
+                  <./figuras/case02_06.png>]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[37
+
+pdfTeX warning (ext4): destination with the same identifier (name{37.-1}) has b
+een already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.421 \end{PartSlide}
+                     ] <figuras/kaggle.png, id=404, 980.66376pt x 530.98375pt>
+File: figuras/kaggle.png Graphic file (type png)
+
+<use figuras/kaggle.png>
+Package pdftex.def Info: figuras/kaggle.png used on input line 429.
+(pdftex.def)             Requested size: 980.66136pt x 530.98244pt.
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[38
+
+pdfTeX warning (ext4): destination with the same identifier (name{38.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.432 \newpage
+               <./figuras/kaggle.png>]
+<figuras/kaggle_results.png, id=411, 967.615pt x 643.40375pt>
+File: figuras/kaggle_results.png Graphic file (type png)
+
+<use figuras/kaggle_results.png>
+Package pdftex.def Info: figuras/kaggle_results.png used on input line 438.
+(pdftex.def)             Requested size: 967.61266pt x 643.40218pt.
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[39 <./figuras/kaggle_results.png>]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[40
+
+pdfTeX warning (ext4): destination with the same identifier (name{40.-1}) has b
+een already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.446 \end{PartSlide}
+                     ] <figuras/googlefit.png, id=421, 1606.0pt x 762.85pt>
+File: figuras/googlefit.png Graphic file (type png)
+
+<use figuras/googlefit.png>
+Package pdftex.def Info: figuras/googlefit.png used on input line 453.
+(pdftex.def)             Requested size: 1605.99611pt x 762.84814pt.
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[41
+
+pdfTeX warning (ext4): destination with the same identifier (name{41.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.456 \end{Slide}
+                  <./figuras/googlefit.png>]
+<figuras/googlefitsdk.png, id=427, 960.58875pt x 467.7475pt>
+File: figuras/googlefitsdk.png Graphic file (type png)
+
+<use figuras/googlefitsdk.png>
+Package pdftex.def Info: figuras/googlefitsdk.png used on input line 464.
+(pdftex.def)             Requested size: 960.5864pt x 467.74634pt.
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[42
+
+pdfTeX warning (ext4): destination with the same identifier (name{42.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.467 \end{Slide}
+                  <./figuras/googlefitsdk.png>]
+<figuras/funf.png, id=434, 959.585pt x 498.86375pt>
+File: figuras/funf.png Graphic file (type png)
+ <use figuras/funf.png>
+Package pdftex.def Info: figuras/funf.png used on input line 475.
+(pdftex.def)             Requested size: 959.58266pt x 498.86253pt.
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[43
+
+pdfTeX warning (ext4): destination with the same identifier (name{43.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.479 \end{Slide}
+                  <./figuras/funf.png>]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[44
+
+pdfTeX warning (ext4): destination with the same identifier (name{44.-1}) has b
+een already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.486 \end{PartSlide}
+                     ]
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 491.
+
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[45
+
+pdfTeX warning (ext4): destination with the same identifier (name{45.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.499 \end{Slide}
+                 ] (./har.bbl
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <5> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 8.
 
-[28])
+)
 
 *******************************************************
 ***** !! PRINT THIS DOCUMENT IN LANDSCAPE MODE !! *****
 *******************************************************
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 333.
-[28]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 333.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 505.
+[45]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 505.
  (./har.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 333.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 333.
-
-
-Package rerunfilecheck Warning: File `har.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `har.out':
-(rerunfilecheck)             Before: 3A503251075189C74DC9A78F4E5D0CCF;1299
-(rerunfilecheck)             After:  CBD088492F2BD2CFF0A14AE9C8720A70;1410.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 505.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 505.
+Package rerunfilecheck Info: File `har.out' has not changed.
+(rerunfilecheck)             Checksum: 154244F52449849FC149E14C7395FDB0;2297.
  ) 
 Here is how much of TeX's memory you used:
- 7883 strings out of 493315
- 115208 string characters out of 6137904
- 208572 words of memory out of 5000000
- 11141 multiletter control sequences out of 15000+600000
- 7308 words of font info for 26 fonts, out of 8000000 for 9000
+ 8015 strings out of 493315
+ 117129 string characters out of 6137904
+ 208581 words of memory out of 5000000
+ 11212 multiletter control sequences out of 15000+600000
+ 9484 words of font info for 33 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 41i,16n,32p,227b,673s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+ 41i,16n,32p,227b,683s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pf
+b></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 /usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></us
 r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr
@@ -1097,11 +1484,13 @@ ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/loc
 al/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local
 /texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/loca
 l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/loca
-l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on har.pdf (30 pages, 5611448 bytes).
+l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local
+/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
+texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
+Output written on har.pdf (46 pages, 6373451 bytes).
 PDF statistics:
- 332 PDF objects out of 1000 (max. 8388607)
- 249 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
- 230 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 536 PDF objects out of 1000 (max. 8388607)
+ 405 compressed objects within 5 object streams
+ 112 named destinations out of 1000 (max. 500000)
+ 413 words of extra memory for PDF output out of 10000 (max. 10000000)
 
