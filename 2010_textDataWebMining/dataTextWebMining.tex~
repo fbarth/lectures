@@ -1,0 +1,463 @@
+%
+% Prova didática do concurso externo do SENAC.
+%
+% by Fabrício Jailson Barth 2007
+%
+
+\documentclass[landscape,pdftex]{jomislides}
+
+\slidesmag{5} % escala, qto maior maiores serão as letras/figras/etc.
+
+%\centerslidesfalse
+
+\usepackage{algorithmic}
+\usepackage{alltt}
+\usepackage{booktabs}
+
+%
+% Slides
+% ======
+%
+
+
+\begin{document}
+
+%\input{autorHeaders}
+
+\title{Introdução ao tema Sistemas Inteligentes} 
+\author{Fabrício Jailson Barth}
+\institution{Prova Didática - Concurso Unifesp}
+\date{Junho de 2010}
+
+\SlideHeader{}
+            {}
+\SlideFooter{\theslidepartheading $\;$ --- $\;$ \theslideheading}
+            {\theslide}
+
+\vpagecolor[white]{white}
+
+
+\subtitle{}
+
+\maketitle
+
+
+\begin{Slide}{Objetivos e Sumário}
+\begin{itemize}
+\item O que são Sistemas Inteligentes?
+\item Exemplos de Sistemas Inteligentes.
+\item Um exemplo de Sistema Inteligente na área da Saúde.
+\item Considerações finais e referências.
+\end{itemize}
+\end{Slide}
+
+\begin{PartSlide}{\textbf{Definições}}
+\end{PartSlide}
+
+\begin{Slide}{Sistemas Inteligentes}
+Sistemas Inteligente (agentes autônomos) são sistemas
+computacionais que habitam algum ambiente complexo e dinâmico,
+percebem e agem de maneira autônoma sobre este ambiente, para
+realizar um conjunto de tarefas e objetivos para o qual ele foi
+projetado \cite{mae1994}.
+\end{Slide}
+
+\begin{Slide}{Sistemas Inteligentes}
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.7\columnwidth}{0.7\textheight}
+{\includegraphics{figuras/robot_marte.jpg}}
+\end{figure}
+\end{Slide}
+
+%\begin{Slide}{O que é Inteligência Artificial(IA)?}
+%\begin{itemize}
+%\item É uma área da ciência ou da engenharia que tem como
+%  objetivo construir máquinas inteligentes, especialmente programas
+%  de computador inteligentes.
+%
+%\item \emph{O que são máquinas inteligentes? O que é inteligência?}
+%
+%\item É o estudo de como fazer os computadores realizarem coisas
+%  que, no momento, as pessoas fazem melhor.
+%
+%\item \textit{Operações de soma $\times$ Análise de mercado}
+%
+%\end{itemize}
+%\end{Slide}
+%
+%\begin{Slide}{Objetivos da IA}
+%\begin{itemize}
+%\item \emph{Teórico}: a criação de teorias e modelos para a
+%  capacidade cognitiva. Compreender o que é inteligência e como o
+%  raciocínio se processa.
+%\item \emph{Prático}: a implementação de sistemas computacionais
+%  baseados nestes modelos. Implementar sistemas computacionais que
+%  resolvem problemas que outros sistemas, implementados usando
+%  técnicas tradicionais, não conseguem resolver.
+%\end{itemize}
+%\end{Slide}
+%
+%\begin{Slide}{Objetivos da IA - \emph{Etapas}}
+%\begin{itemize}
+%\item Algo que possui um comportamento considerado inteligente
+%  (humano, uma sociedade de formigas, ...). 
+%\item Cria-se um modelo para esta "inteligência".
+%\item Cria-se ferramentas, implementado os modelos definidos.
+%\item Implementar aplicações usando as ferramentas
+%  implementadas.
+%\item O comportamento das aplicações implementadas pode ser
+%  considerado inteligente?
+%\end{itemize}
+%\end{Slide}
+
+\begin{PartSlide}{\textbf{Alguns exemplos de Sistemas Inteligentes}}
+\end{PartSlide}
+
+\begin{Slide}{Jogos}
+\begin{figure}[htbp]
+\centering 
+\resizebox*{1\columnwidth}{0.6\textheight}
+{\includegraphics{figuras/jogos.png}}
+\begin{itemize}
+\small
+\item Ambientes competitivos, onde as metas dos agentes estão em
+  conflito: \textit{Deep Blue vs. Kasparov}.
+\item \textit{Games}: comportamento menos determinístico.
+\end{itemize}
+\end{figure}
+\end{Slide}
+
+\begin{Slide}{Processamento de Linguagem Natural}
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.9\columnwidth}{0.7\textheight}
+{\includegraphics{figuras/ner.png}}
+\begin{itemize}
+\item Reconhecimento de Entidades Nomeadas.
+\end{itemize}
+\end{figure}
+\end{Slide}
+
+\begin{Slide}{Visão Computacional}
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.9\columnwidth}{0.7\textheight}
+{\includegraphics{figuras/reconhecedorFaces.jpg}}
+\begin{itemize}
+\item Reconhecimento de formas, por exemplo, faces.
+\end{itemize}
+\end{figure}
+\end{Slide}
+
+\begin{Slide}{Visão Computacional - outro exemplo}
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.8\columnwidth}{0.7\textheight}
+{\includegraphics{figuras/placa.jpg}}
+\begin{itemize}
+\item Identificação de Placas.
+\end{itemize}
+\end{figure}
+\end{Slide}
+
+\begin{Slide}{Mineração de Dados e Textos}
+\begin{figure}[htbp]
+\centering 
+\resizebox*{1\columnwidth}{0.6\textheight}
+{\includegraphics{figuras/mineracaoDados.png}}
+\begin{itemize}
+\item Análise de dados (\emph{estruturados} ou
+  \emph{não estruturados}) para
+  tomada de decisões, por exemplo, registros da área da saúde -
+  conhecimento da área da saúde.
+\end{itemize}
+\end{figure}
+\end{Slide}
+
+%\begin{Slide}{Mineração de Dados e \emph{Textos}}
+%\begin{figure}[htbp]
+%\centering 
+%\resizebox*{1\columnwidth}{0.55\textheight}
+%{\includegraphics{figuras/mineracaoTexto.png}}
+%\begin{itemize}
+%\item Manipulação computacional das milhões de
+%  informações \emph{não-estruturadas} existentes na web, por exemplo.
+%\end{itemize}
+%\end{figure}
+%\end{Slide}
+
+\begin{Slide}{Recuperação de informação}
+\begin{figure}[htbp]
+\centering 
+\resizebox*{1\columnwidth}{0.55\textheight}
+{\includegraphics{figuras/recuperacaoContextualizada.png}}
+\begin{itemize}
+\small
+\item Sistemas que fazem uso de ontologias para melhorar a
+  eficiência na recuperação de informações (web semântica).
+%\item Outro exemplo: \textit{crawler} orientado ao objetivo.
+\end{itemize}
+\end{figure}
+\end{Slide}
+
+\begin{Slide}{Agentes Assistentes}
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.85\columnwidth}{0.7\textheight}
+{\includegraphics{figuras/emails.png}}
+\begin{itemize}
+\item Agentes que colaboram com o usuário na execução das tarefas.
+\end{itemize}
+\end{figure}
+\end{Slide}
+
+\begin{Slide}{Sistemas de Recomendação}
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.9\columnwidth}{0.6\textheight}
+{\includegraphics{figuras/recomendacoes.png}}
+\begin{itemize}
+\small
+\item Sistemas que tentam se adequar as expectativas dos usuários a
+  partir de modelos representando o perfil do usuário.
+\end{itemize}
+\end{figure}
+\end{Slide}
+
+\begin{Slide}{Robótica}
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.6\columnwidth}{0.6\textheight}
+{\includegraphics{figuras/robotica.jpg}}
+\begin{itemize}
+\item Robôs autônomos.
+\end{itemize}
+\end{figure}
+\end{Slide}
+
+\begin{PartSlide}{\textbf{Um exemplo de
+      Sistema Inteligente na área da Saúde}}
+\end{PartSlide}
+
+\begin{Slide}{Diagnóstico para o uso de lentes de contato}
+  
+O setor de oftalmologia de um hospital da cidade de São Paulo possui,
+no seu banco de dados, um histórico de pacientes que procuraram o
+hospital queixando-se de problemas na visão.
+
+A conduta, em alguns casos, realizada pelo corpo clínico de
+oftalmologistas do hospital é indicar o uso de lentes ao paciente. 
+
+\emph{Problema: Extrair do banco de dados do hospital uma hipótese que
+  explica que paciente deve usar ou não lente de contatos.}
+
+\end{Slide}
+
+\begin{PartSlide}{\textbf{Quais são os componentes deste sistema?}}
+\end{PartSlide}
+
+
+\begin{Slide}{Componentes}
+  \begin{itemize}
+  \item Que objetos são relevantes para a criação da hipótese?
+  \item Como representá-los?
+  \item Que linguagem de representação de conhecimento deve-se utilizar
+    para representar a hipótese?
+  \item Que algoritmo utilizar para gerar a hipótese?
+  \end{itemize}
+
+  \newpage
+
+  \begin{itemize}
+  \item Que objetos são relevantes?
+
+\begin{itemize}
+\item Depois de um estudo detalhado do problema com especialistas da
+  área...
+\item \emph{Idade} do paciente.
+\item Se o paciente tem ou não \emph{miopia}.
+\item Se o paciente tem ou não \emph{astigmatismo}.
+\item Qual é a taxa de \emph{lacrimejamento} dos olhos do paciente.
+\end{itemize}
+
+  \item Como representá-los? \emph{Atributo/Valor}
+  \end{itemize}
+\end{Slide}
+
+\begin{Slide}{Atributos}
+\begin{itemize}
+\item idade (jovem, adulto, idoso)
+\item miopia (míope, hipermétrope)
+\item astigmatismo (não, sim)
+\item taxa de lacrimejamento (reduzido, normal)
+\item lentes de contato (forte, fraca, nenhuma)
+\end{itemize}
+\end{Slide}
+
+\begin{Slide}{Dados}
+{\small
+\begin{table}[htpb]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\toprule
+Idade & Miopia & Astigmat. & Lacrimej. & Lentes \\
+\midrule
+jovem&míope&não&reduzido&nenhuma\\
+jovem&míope&não&normal&fraca\\
+jovem&míope&sim&reduzido&nenhuma\\
+jovem&míope&sim&normal&forte\\
+jovem&hiper&não&reduzido&nenhuma\\
+jovem&hiper&não&normal&fraca\\
+jovem&hiper&sim&reduzido&nenhuma\\
+jovem&hiper&sim&normal&forte\\
+adulto&míope&não&reduzido&nenhuma\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\newpage
+
+\begin{table}[htpb]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\toprule
+Idade & Miopia & Astigmat. & Lacrimej. & Lentes \\
+\midrule
+adulto&míope&não&normal&fraca\\
+adulto&míope&sim&reduzido&nenhuma\\
+adulto&míope&sim&normal&forte\\
+adulto&hiper&sim&reduzido&nenhuma\\
+adulto&hiper&não&normal&fraca\\
+adulto&hiper&sim&reduzido&nenhuma\\
+adulto&hiper&sim&normal&nenhuma\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\newpage
+
+\begin{table}[htpb]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\toprule
+Idade & Miopia & Astigmat. & Lacrimej. & Lentes \\
+\midrule
+idoso&míope&não&reduzido&nenhuma\\
+idoso&míope&não&normal&nenhuma\\
+idoso&míope&sim&reduzido&nenhuma\\
+idoso&míope&sim&normal&forte\\
+idoso&hiper&não&reduzido&nenhuma\\
+idoso&hiper&não&normal&fraca\\
+idoso&hiper&sim&reduzido&nenhuma\\
+idoso&hiper&sim&normal&nenhuma\\
+\bottomrule
+\end{tabular}
+\end{table}
+}
+\end{Slide}
+
+\begin{Slide}{\textbf{Extração de ``conhecimento''}}
+\begin{itemize}
+\item O que foi apresentado nos slides anteriores pode ser considerado
+  como conhecimento? \emph{Não}
+\item Pode ser apresentado como uma informação que consegue explicar a
+  tomada de decisão dos especialistas? \emph{Não}
+\item \emph{O que fazer?}
+\end{itemize}
+\end{Slide}
+
+
+\begin{Slide}{\textbf{Extração de ``conhecimento''}}
+\begin{itemize}
+\item Extrair a informação realmente relevante. 
+\item Utilizar uma linguagem de representação \emph{compreensível} ao
+  ser humano.
+%\item \emph{Árvore de decisão}
+\end{itemize}
+\end{Slide}
+
+\begin{Slide}{Árvore de decisão}
+\includegraphics[width=0.85\textwidth]{figuras/arvoreDecisao.pdf}
+\tiny
+\begin{itemize}
+\item Cada nodo interno testa um atributo.
+\item Cada aresta corresponde a um valor de atributo.
+\item Cada nodo folha retorna uma classificação.
+\end{itemize}
+\end{Slide}
+
+\begin{Slide}{Algoritmos Indutores de Árvores de Decisão}
+
+\begin{itemize}
+\item \emph{Que algoritmo utilizar para gerar hipóteses na forma de
+  árvores de decisão?}
+\item ID3, C4.5\cite{qui1988}: são algoritmos indutores de árvore de
+  decisão, \emph{top-down}, \emph{recursivos} e que fazem uso do conceito de
+  \emph{entropia} para identificar os melhores atributos que representam o
+  conjunto de dados.
+\end{itemize}
+\end{Slide}
+
+\begin{Slide}{Resultado: Sistema Especialista}
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.8\columnwidth}{0.6\textheight}
+{\includegraphics{figuras/sistemaEspecialista.pdf}}
+\end{figure}
+\end{Slide}
+
+\begin{Slide}{Considerações Finais}
+Nesta aula foram apresentados:
+\begin{itemize}
+\item Definições e exemplos de sistemas inteligentes.
+\item Exemplo de utilização de algoritmos indutores de
+  árvores de decisão na construção de um sistema
+  especialista na área da saúde.
+\end{itemize}
+\end{Slide}
+
+%\begin{Slide}{Regras de Produção}
+%\begin{itemize}
+%\item Baseado na premissa que o processo de tomada de decisão humano
+%  pode ser modelado por meio de regras do tipo \emph{SE condições
+%    ENTÃO conclusões [FAÇA ações]}
+%\item Convertendo uma árvore de decisão em regras de produção:
+%\end{itemize}
+%
+%\newpage
+%
+%{\small
+%\begin{itemize}
+%\item SE lacrimejamento=reduzido ENTÃO lente=nenhuma
+%\item SE lacrimejamento=normal E astigmatismo=não ENTÃO lente=fraca
+%\item SE lacrimejamento=normal E astigmatismo=sim E miopia=miope ENTÃO
+%  lente=forte
+%\item SE lacrimejamento=normal E astigmatismo=sim E
+%  miopia=hipermetrope ENTÃO lente=nenhuma
+%\end{itemize}
+%}
+%\end{Slide}
+
+
+\begin{PartSlide}{\textbf{Referências}}
+\end{PartSlide}
+
+%\begin{Slide}{Referências}
+%\begin{itemize}
+%\item McCarthy, J. \textit{What is Artificial Intelligence?} Obtido em
+%  http://www-formal.stanford.edu/jmc/whatisai/whatisai.html
+%\item Russell, S., Norvig P. \textit{Inteligência
+%  Artificial}. Tradução da Segunda Edição. Capítulos
+%01, 07, 08, 09 e 10.
+%\item Tom Mitchell. \textit{Machine Learning}.
+%\end{itemize}
+%\end{Slide}
+
+\nocite{mit1997,rus2003}
+
+\bibliographystyle{plain}
+\bibliography{doutorado,mestrado,publicacoes,atech}
+
+\end{document}
+

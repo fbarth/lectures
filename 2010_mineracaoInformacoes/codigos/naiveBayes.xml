@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<process version="4.1">
+
+  <operator name="Root" class="Process" expanded="yes">
+      <description text="Using a simple Naive Bayes classifier."/>
+      <operator name="ArffExampleSource" class="ArffExampleSource">
+          <parameter key="data_file"	value="/home/fabricio/eclipse_2/workspace/csiro/data/tabelas/tabela_treinamento2-nominal.arff"/>
+          <parameter key="label_attribute"	value="relevancia"/>
+      </operator>
+      <operator name="FeatureNameFilter" class="FeatureNameFilter" activated="no">
+          <parameter key="except_features_with_name"	value="cossenoTodosAtomos"/>
+          <parameter key="skip_features_with_name"	value="[consulta|documento|tfidf|tf|frequencia|euclidianaTodosAtomos]+"/>
+      </operator>
+      <operator name="FeatureNameFilter (2)" class="FeatureNameFilter">
+          <parameter key="skip_features_with_name"	value="[consulta|documento]+"/>
+      </operator>
+      <operator name="NaiveBayes" class="NaiveBayes">
+      </operator>
+      <operator name="ModelWriter" class="ModelWriter" activated="no">
+          <parameter key="model_file"	value="/home/fabricio/atech2008/soujava/codigos/bayes.mod"/>
+      </operator>
+  </operator>
+
+</process>

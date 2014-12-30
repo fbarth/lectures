@@ -1,0 +1,44 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.53 }
+
+\bibitem[Data, data everywhere. A special report on managing information
+  2010]{eco2010}
+\abntrefinfo{Data\ldots}{DATA\ldots}{2010}
+{DATA, data everywhere. A special report on managing information.
+\emph{The Economist}, p. 1--16, February 2010.}
+
+\bibitem[Liu 2009]{bin2009}
+\abntrefinfo{Liu}{LIU}{2009}
+{LIU, B. \emph{Web Data Mining: Exploring Hyperlinks, Contents, and Usage Data
+  (Data-Centric Systems and Applications)}. 1st ed. 2007. corr. 2nd printing.
+  ed. Springer, 2009. Hardcover.
+ISBN 3540378812. Dispon{\'\i}vel em:
+  $<$http://www.amazon.com/exec/obidos/redirect?tag=citeulike07-20\&path=ASIN/%
+3540378812$>$.}
+
+\bibitem[Mitchell 1997]{mit1997}
+\abntrefinfo{Mitchell}{MITCHELL}{1997}
+{MITCHELL, T.~M. \emph{Machine Learning}. [S.l.]: McGraw-Hill, 1997.}
+
+\bibitem[Quinlan 1988]{qui1988}
+\abntrefinfo{Quinlan}{QUINLAN}{1988}
+{QUINLAN, J.~R. Knowledge acquisition for knowledge-based systems.
+In:  \underline{\ \ \ \ \ \ \ \ }. [S.l.]: Academic Press, 1988. cap.
+  Simplifying Decision Trees.}
+
+\bibitem[Russel e Norvig 2003]{rus2003}
+\abntrefinfo{Russel e Norvig}{RUSSEL; NORVIG}{2003}
+{RUSSEL, S.~J.; NORVIG, P. \emph{Artificial intelligence: a modern approach}.
+  2. ed. [S.l.]: Prentice-Hall, 2003.
+ISBN 0-13-790395-2.}
+
+\bibitem[Witten e Frank 2005]{wit2005}
+\abntrefinfo{Witten e Frank}{WITTEN; FRANK}{2005}
+{WITTEN, I.~H.; FRANK, E. \emph{Data Mining: Practical Machine Learning Tools
+  and Techniques}. Second. [S.l.]: Elsevier, 2005.}
+
+\end{thebibliography}

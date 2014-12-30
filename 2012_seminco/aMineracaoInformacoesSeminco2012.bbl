@@ -1,0 +1,56 @@
+\begin{thebibliography}{1}
+
+\bibitem{eco2010}
+Data, data everywhere. a special report on managing information.
+\newblock {\em The Economist}, pages 1--16, February 2010.
+
+\bibitem{cha2011}
+Chih-Chung Chang and Chih-Jen Lin.
+\newblock {LIBSVM}: A library for support vector machines.
+\newblock {\em ACM Transactions on Intelligent Systems and Technology},
+  2:27:1--27:27, 2011.
+\newblock Software available at \url{http://www.csie.ntu.edu.tw/~cjlin/libsvm}.
+
+\bibitem{bin2009}
+Bing Liu.
+\newblock {\em Web Data Mining: Exploring Hyperlinks, Contents, and Usage Data
+  (Data-Centric Systems and Applications)}.
+\newblock Springer, 1st ed. 2007. corr. 2nd printing edition, January 2009.
+
+\bibitem{lop2008}
+Thomas Jefferson~P. Lopes, Gabriel Koji~Lemos Hiratani, Fabrício~J. Barth,
+  Orlando Rodrigues, Jr., and Juliana~Maraccini Pinto.
+\newblock Mineração de opiniões aplicada à análise de investimentos.
+\newblock In {\em Companion Proceedings of the XIV Brazilian Symposium on
+  Multimedia and the Web}, WebMedia '08, pages 117--120, New York, NY, USA,
+  2008. ACM.
+
+\bibitem{med2005}
+João~Carlos Medau, Maria~Cristina Belderrain, and Fabrício~J. Barth.
+\newblock Reordenação de resultados de busca na web conforme critério de
+  relevância definido pelo usuário.
+\newblock In {\em Anais do XI Simpósio Brasileiro de Sistemas Multimídia e Web
+  - WebMedia}, pages 220--222, 2005.
+
+\bibitem{mit1997}
+Tom~M. Mitchell.
+\newblock {\em Machine Learning}.
+\newblock McGraw-Hill, 1997.
+
+\bibitem{qui1988}
+J.~R. Quinlan.
+\newblock {\em Knowledge Acquisition for Knowledge-Based Systems}, chapter
+  Simplifying Decision Trees.
+\newblock Academic Press, 1988.
+
+\bibitem{rus2003}
+Stuart~J. Russel and Peter Norvig.
+\newblock {\em Artificial intelligence: a modern approach}.
+\newblock Prentice-Hall, 2 edition, 2003.
+
+\bibitem{wit2005}
+Ian~H. Witten and Eibe Frank.
+\newblock {\em Data Mining: Practical Machine Learning Tools and Techniques}.
+\newblock Elsevier, second edition, 2005.
+
+\end{thebibliography}

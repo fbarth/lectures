@@ -1,0 +1,637 @@
+%
+% Prova didática do concurso externo do SENAC.
+%
+% by Fabrício Jailson Barth 2007
+%
+
+\documentclass[landscape,pdftex]{jomislides}
+
+\slidesmag{5} % escala, qto maior maiores serão as letras/figras/etc.
+
+%\centerslidesfalse
+
+\usepackage{algorithmic}
+\usepackage{alltt}
+\usepackage{booktabs}
+\usepackage{listings}
+
+
+%
+% Slides
+% ======
+%
+
+
+\begin{document}
+
+%\input{autorHeaders}
+
+\title{Data, Text and Web Mining} 
+\author{}
+\institution{TerraForum Consultores}
+\date{Junho de 2010}
+
+\SlideHeader{}
+            {}
+\SlideFooter{\theslidepartheading $\;$ --- $\;$ \theslideheading}
+            {\theslide}
+
+\vpagecolor[white]{white}
+
+
+\subtitle{}
+
+\maketitle
+
+
+\begin{Slide}{Objetivo}
+Apresentar a importância do tema, os conceitos relacionados e
+alguns exemplos de aplicações.
+\end{Slide}
+
+\begin{PartSlide}{\textbf{Importância do Tema}}
+\end{PartSlide}
+
+\begin{Slide}{Problema}
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.7\columnwidth}{0.8\textheight}
+{\includegraphics{figuras/information-overload.jpg}}
+\end{figure}
+\end{Slide}
+
+\begin{Slide}{Alguns dados...}
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.75\columnwidth}{0.75\textheight}
+{\includegraphics{figuras/notic_hor_dia_2.pdf}}
+\end{figure}
+\tiny
+Quantidade de notícias publicadas na Web por apenas seis
+veículos de notícias.
+\end{Slide}
+
+\begin{Slide}{Alguns dados...}
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.7\columnwidth}{0.7\textheight}
+{\includegraphics{figuras/noticias.pdf}}
+\end{figure}
+\end{Slide}
+
+\begin{Slide}{Por que minerar informações?}
+\begin{itemize}
+\item Explicitar conhecimento médico a partir de registros
+  médicos. 
+\item Sumarizar tendências de publicações de artigos e
+  patentes sobre um determinado tema. 
+\item Sumarizar e filtrar notícias relevantes.
+\newpage
+\item Sumarizar a opinião expressa na Web sobre a sua empresa.
+\item Identificar padrões de navegação em sites.
+\item Identificar grupos de usuários com perfil similar em
+  ambientes de escrita colaborativa. 
+%\item Identificar um padrão de consumo de clientes.
+\end{itemize}
+\end{Slide}
+
+\begin{PartSlide}{\textbf{Explicitar conhecimento médico a partir
+      de registros médicos}}
+\end{PartSlide}
+
+\begin{Slide}{Diagnóstico para o uso de lentes de contato}
+  
+O setor de oftalmologia de um hospital da cidade de São Paulo possui,
+no seu banco de dados, um histórico de pacientes que procuraram o
+hospital queixando-se de problemas na visão.
+
+A conduta, em alguns casos, realizada pelo corpo clínico de
+oftalmologistas do hospital é indicar o uso de lentes ao paciente. 
+
+\emph{Problema: Extrair do banco de dados do hospital uma hipótese que
+  explica que paciente deve usar ou não lente de contatos.}
+
+\end{Slide}
+
+\begin{PartSlide}{\textbf{Quais são os componentes deste sistema?}}
+\end{PartSlide}
+
+
+\begin{Slide}{Componentes}
+  \begin{itemize}
+  \item Que objetos são relevantes para a criação da hipótese?
+  \item Como representá-los?
+  \item Que linguagem de representação de conhecimento deve-se utilizar
+    para representar a hipótese?
+  \item Que algoritmo utilizar para gerar a hipótese?
+  \end{itemize}
+
+  \newpage
+
+  \begin{itemize}
+  \item Que objetos são relevantes?
+
+\begin{itemize}
+\item Depois de um estudo detalhado do problema com especialistas da
+  área...
+\item \emph{Idade} do paciente.
+\item Se o paciente tem ou não \emph{miopia}.
+\item Se o paciente tem ou não \emph{astigmatismo}.
+\item Qual é a taxa de \emph{lacrimejamento} dos olhos do paciente.
+\end{itemize}
+
+  \item Como representá-los? \emph{Atributo/Valor}
+  \end{itemize}
+\end{Slide}
+
+\begin{Slide}{Atributos}
+\begin{itemize}
+\item idade (jovem, adulto, idoso)
+\item miopia (míope, hipermétrope)
+\item astigmatismo (não, sim)
+\item taxa de lacrimejamento (reduzido, normal)
+\item lentes de contato (forte, fraca, nenhuma)
+\end{itemize}
+\end{Slide}
+
+\begin{Slide}{Dados}
+{\small
+\begin{table}[htpb]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\toprule
+Idade & Miopia & Astigmat. & Lacrimej. & Lentes \\
+\midrule
+jovem&míope&não&reduzido&nenhuma\\
+jovem&míope&não&normal&fraca\\
+jovem&míope&sim&reduzido&nenhuma\\
+jovem&míope&sim&normal&forte\\
+jovem&hiper&não&reduzido&nenhuma\\
+jovem&hiper&não&normal&fraca\\
+jovem&hiper&sim&reduzido&nenhuma\\
+jovem&hiper&sim&normal&forte\\
+adulto&míope&não&reduzido&nenhuma\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\newpage
+
+\begin{table}[htpb]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\toprule
+Idade & Miopia & Astigmat. & Lacrimej. & Lentes \\
+\midrule
+adulto&míope&não&normal&fraca\\
+adulto&míope&sim&reduzido&nenhuma\\
+adulto&míope&sim&normal&forte\\
+adulto&hiper&sim&reduzido&nenhuma\\
+adulto&hiper&não&normal&fraca\\
+adulto&hiper&sim&reduzido&nenhuma\\
+adulto&hiper&sim&normal&nenhuma\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\newpage
+
+\begin{table}[htpb]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\toprule
+Idade & Miopia & Astigmat. & Lacrimej. & Lentes \\
+\midrule
+idoso&míope&não&reduzido&nenhuma\\
+idoso&míope&não&normal&nenhuma\\
+idoso&míope&sim&reduzido&nenhuma\\
+idoso&míope&sim&normal&forte\\
+idoso&hiper&não&reduzido&nenhuma\\
+idoso&hiper&não&normal&fraca\\
+idoso&hiper&sim&reduzido&nenhuma\\
+idoso&hiper&sim&normal&nenhuma\\
+\bottomrule
+\end{tabular}
+\end{table}
+}
+\end{Slide}
+
+\begin{Slide}{\textbf{Extração de ``conhecimento''}}
+\begin{itemize}
+\item O que foi apresentado nos slides anteriores pode ser considerado
+  como conhecimento? \emph{Não}
+\item Pode ser apresentado como uma informação que consegue explicar a
+  tomada de decisão dos especialistas? \emph{Não}
+\item \emph{O que fazer?}
+\end{itemize}
+\end{Slide}
+
+
+\begin{Slide}{\textbf{Extração de ``conhecimento''}}
+\begin{itemize}
+\item Extrair a informação realmente relevante. 
+\item Utilizar uma linguagem de representação \emph{compreensível} ao
+  ser humano.
+%\item \emph{Árvore de decisão}
+\end{itemize}
+\end{Slide}
+
+\begin{Slide}{Árvore de decisão}
+\includegraphics[width=0.85\textwidth]{figuras/arvoreDecisao.pdf}
+\tiny
+\begin{itemize}
+\item Cada nodo interno testa um atributo.
+\item Cada aresta corresponde a um valor de atributo.
+\item Cada nodo folha retorna uma classificação.
+\end{itemize}
+\end{Slide}
+
+\begin{Slide}{Algoritmos Indutores de Árvores de Decisão}
+
+\begin{itemize}
+\item \emph{Que algoritmo utilizar para gerar hipóteses na forma de
+  árvores de decisão?}
+\item ID3, C4.5\cite{qui1988}: são algoritmos indutores de árvore de
+  decisão, \emph{top-down}, \emph{recursivos} e que fazem uso do conceito de
+  \emph{entropia} para identificar os melhores atributos que representam o
+  conjunto de dados.
+\end{itemize}
+\end{Slide}
+
+\begin{Slide}{Resultado: Sistema Especialista}
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.8\columnwidth}{0.6\textheight}
+{\includegraphics{figuras/sistemaEspecialista.pdf}}
+\end{figure}
+\end{Slide}
+
+\begin{Slide}{Sistema Especialista: Regras de Produção}
+\begin{itemize}
+\item Baseado na premissa que o processo de tomada de decisão humano
+  pode ser modelado por meio de regras do tipo \emph{SE condições
+    ENTÃO conclusões [FAÇA ações]}
+\item Convertendo uma árvore de decisão em regras de produção:
+\end{itemize}
+
+\newpage
+
+{\small
+\begin{itemize}
+\item SE lacrimejamento=reduzido ENTÃO lente=nenhuma
+\item SE lacrimejamento=normal E astigmatismo=não ENTÃO lente=fraca
+\item SE lacrimejamento=normal E astigmatismo=sim E miopia=miope ENTÃO
+  lente=forte
+\item SE lacrimejamento=normal E astigmatismo=sim E
+  miopia=hipermetrope ENTÃO lente=nenhuma
+\end{itemize}
+}
+\end{Slide}
+
+
+\begin{Slide}{Um pouco de código...}
+\begin{itemize}
+\item Gerar a árvore de decisão usando o RapidMiner\footnote{http://www.rapidminer.com}.
+\item Codificar as regras de produção usando o \textit{Drools
+    Expert}\footnote{http://www.jboss.org/drools/drools-expert.html}.
+\end{itemize}
+\end{Slide}
+
+\begin{PartSlide}{\textbf{Organizar documentos}}
+\end{PartSlide}
+
+\begin{Slide}{O que fazer com grandes quantidades de documentos?}
+\begin{itemize}
+\item Notícias, patentes, artigos...
+\item \emph{Para tirar proveito desta informação é
+    necessário organizá-la de alguma forma}:
+\begin{itemize}
+\item Agrupamento de notícias, patentes, artigos.
+\item Classificação, Recomendação e Filtragem de Notícias.
+\end{itemize}
+\end{itemize}
+\end{Slide}
+
+\begin{Slide}{Exemplo de agrupamento}
+\begin{center}
+\includegraphics[width=7cm]{figuras/agrupamentoNoticias.png}
+\end{center}
+\tiny
+E quando não é possível fazer manualmente?
+\end{Slide}
+
+
+\begin{Slide}{Definições de Algoritmos de Agrupamento}
+\begin{itemize}
+\item O objetivo dos algoritmos de agrupamento é colocar os objetos
+  \emph{similares} em um \emph{mesmo grupo} e objetos \emph{não
+    similares} em \emph{grupos diferentes}.
+\item Normalmente, objetos são descritos e agrupados usando um
+  conjunto de \emph{atributos e valores}.
+\item Não existe nenhuma informação sobre a classe ou categoria dos
+  objetos.
+\end{itemize} 
+\end{Slide}
+
+\begin{Slide}{Formato de um documento}
+\small  
+...
+Esta disciplina tem como objetivo apresentar os principais conceitos
+da área de Inteligência Artificial, caracterizar as principais
+técnicas e métodos, e implementar alguns problemas clássicos desta
+área sob um ponto de vista introdutório.
+\\
+A estratégia de trabalho, o conteúdo ministrado e a forma dependerão
+dos projetos selecionados pelos alunos. Inicialmente, os alunos
+deverão trazer os seus Projetos de Conclusão de Curso, identificar
+intersecções entre o projeto e a disciplina, e propor atividades para
+a disciplina. 
+...
+\end{Slide}
+
+
+\begin{Slide}{Atributo/Valor usando vetores}
+Como representar os documentos?
+
+\begin{equation}
+\overrightarrow{d_{i}} = (p_{i1}, p_{i2}, \cdots , p{in})
+\end{equation}
+\begin{itemize}
+\item Os atributos são as palavras que aparecem nos documentos.
+\item Se todas as palavras que aparecem nos documentos forem
+  utilizadas, o vetor não ficará muito grande?
+\end{itemize}
+\end{Slide}
+
+\begin{Slide}{Diminuindo a dimensionalidade do vetor}
+\begin{itemize}
+\item Como filtrar as palavras que devem ser usadas como
+  atributos?
+\item Em todos os idiomas existem átomos (palavras) que não significam
+  muito. \emph{Stop-words}
+\end{itemize}
+
+\small
+Esta disciplina \emph{tem como} objetivo apresentar \emph{os}
+principais conceitos \emph{da} área \emph{de} Inteligência
+Artificial\emph{,} caracterizar \emph{as} principais técnicas \emph{e} métodos\emph{, e} implementar alguns problemas clássicos \emph{desta}
+área \emph{sob um} ponto \emph{de} vista introdutório\emph{.}
+
+$\cdots$
+
+\end{Slide}
+
+
+\begin{Slide}{Diminuindo ainda mais a dimensionalidade do vetor}
+\begin{itemize}
+\item Algumas palavras podem aparecer no texto de diversas maneiras:
+  \emph{técnica}, \emph{técnicas}, \emph{implementar}, \emph{implementação}...
+\item \emph{Stemming} - encontrar o radical da palavra e usar apenas o
+  radical. 
+\end{itemize}
+\end{Slide}
+
+
+\begin{Slide}{Atributo/Valor usando vetores}
+\begin{itemize}
+\item Já conhecemos os atributos.
+\item E os valores?
+\begin{itemize}
+\item \emph{Booleana} - se a palavra aparece ou não no documento (1 ou 0)
+\item \emph{Por freqüência do termo} - a freqüência com que a palavra
+  aparece no documento (normalizada ou não)
+\item \emph{Ponderação tf-idf} - o peso é proporcional ao número de
+  ocorrências do termo no documento e inversamente proporcional ao
+  número de documentos onde o termo aparece.
+\end{itemize}
+\end{itemize}
+\end{Slide}
+
+
+\begin{Slide}{Por freqüência do termo}
+\small  
+(apresent,0.33)
+(form,0.33)
+(tecnic,0.33)
+(caracteriz,0.33)
+(projet,1.0)
+(introdutori,0.33)
+(objet,0.33)
+(inteligente,0.33)
+(conclusa,0.33)
+(selecion,0.33)
+(intersecco,0.33)
+(classic,0.33)
+(identific,0.33)
+(conceit,0.33)
+(trabalh,0.33)
+(disciplin,1.0)
+(traz,0.33)
+\end{Slide}
+
+
+\begin{Slide}{Conjunto de Exemplos - Atributo/Valor}
+{\small
+\begin{table}[htpb]
+\centering
+\vspace{0.2cm}
+\begin{tabular}{|c|c|c|c|c|c|}
+\toprule
+\textbf{Doc.} & \textbf{apresent} & \textbf{form} &
+\textbf{tecnic} & \textbf{caracteriz} & $\cdots$  \\
+\midrule
+$d_{1}$ & 0.33 & 0.33 & 0.33 & 0.33 & $\cdots$ \\
+$d_{2}$ & 0 & 0.5 & 0.2 & 0.33 & $\cdots$ \\
+$d_{3}$ & 1 & 0.6 & 0 & 0 & $\cdots$ \\
+$d_{4}$ & 0.4 & 0.3 & 0.33 & 0.4 & $\cdots$ \\
+$d_{5}$ & 1 & 0.4 & 0.1 & 0.1 & $\cdots$ \\
+$d_{n}$ & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+}
+\end{Slide}
+
+\begin{Slide}{Componentes para uma solução...}
+\includegraphics[width=8cm]{figuras/componentesAgrupamentoIncompleto.pdf}
+\end{Slide}
+
+%\begin{Slide}{Coletor de RSS e Pré-Processamento}
+%\begin{algorithmic}
+%\STATE \textbf{function} coletorRSS(Lista de RSS): tabela
+%\vspace{0.3cm}
+%\small
+%\STATE i $\leftarrow$ 0;
+%\FOR{cada $rss_{i}$ em RSS} 
+%  \FOR{cada $noticia_{j}$ em $rss_{i}$}
+%    \STATE $d_{i} \leftarrow d_{i} + $ $rss_{i}$.$noticia_{j}$.TITLE;
+%    \STATE $d_{i} \leftarrow d_{i} + $ $rss_{i}$.$noticia_{j}$.DESCRIPTION;
+%    \STATE $d_{i} \leftarrow $ eliminaStopWords($d_{i}$);
+%    \STATE $d_{i} \leftarrow $ stemming($d_{i}$);
+%    \STATE i $\leftarrow$ i + 1;
+%  \ENDFOR
+%\ENDFOR
+%\STATE \textbf{return} criaTabelaExemplos($d$,TF-IDF);
+%\end{algorithmic}
+%\end{Slide}
+
+\begin{Slide}{Pré-processamento dos documentos: um pouco de código...}
+Converter texto em TF-IDF usando o RapidMiner.
+\end{Slide}
+
+\begin{Slide}{Que algoritmo de agrupamento utilizar?}
+\includegraphics[width=8cm]{figuras/componentesAgrupamento.pdf}
+\end{Slide}
+
+\begin{Slide}{Algoritmos para Agrupamento - \textit{K-means}}
+\begin{itemize}
+\item \emph{K} significa o número de agrupamentos (que deve ser
+  informado à priori).
+\item Sequência de ações \emph{iterativas}.
+\item A parada é baseada em algum critério de qualidade dos
+  agrupamentos (por exemplo, similaridade média).
+\end{itemize}
+\end{Slide}
+
+\begin{Slide}{Algoritmo para Agrupamento - \textit{K-means}}
+\begin{centering}
+\includegraphics[width=8cm]{figuras/desenhoKmeans_v2.pdf}
+\end{centering}
+\end{Slide}
+
+\begin{Slide}{Algoritmos para agrupamento dos documentos - \textsc{Weka}}
+Execução do \textit{K-means} no
+\textsc{Weka}\footnote{http://www.cs.waikato.ac.nz/ml/weka/}. 
+\end{Slide}
+
+\begin{Slide}{Algoritmo para agrupamento dos documentos - Resultados}
+\lstset{language=gnuplot}
+\lstset{commentstyle=\textit, basicstyle=\tiny ,showspaces=false}
+\lstset{frame=trBL,frameround=tttt}
+\lstinputlisting[caption=,label=processamento]{codigos/resultadoCluster.txt}
+\end{Slide}
+
+\begin{PartSlide}{Classificação de documentos}
+\end{PartSlide}
+
+\begin{Slide}{Classificação e Filtragem de Notícias}
+\begin{centering}
+\includegraphics[width=8cm]{figuras/feedback.pdf}
+\end{centering}
+\end{Slide}
+
+\begin{Slide}{Conjunto de Exemplos - Atributo/Valor e Classe}
+\small
+\begin{table}[htpb]
+\centering
+\vspace{0.2cm}
+\begin{tabular}{|c|c|c|c|c|c||c|}
+\toprule
+\textbf{Doc.} & \textbf{apresent} & \textbf{form} &
+\textbf{tecnic} & \textbf{caracteriz} & $\cdots$  & \textbf{Relevante}\\
+\midrule
+$d_{1}$ & 0.33 & 0.33 & 0.33 & 0.33 & $\cdots$ & 1\\
+$d_{2}$ & 0 & 0.5 & 0.2 & 0.33 & $\cdots$ & 0\\
+$d_{3}$ & 1 & 0.6 & 0 & 0 & $\cdots$ & 1\\
+$d_{4}$ & 0.4 & 0.3 & 0.33 & 0.4 & $\cdots$ & 1\\
+$d_{5}$ & 1 & 0.4 & 0.1 & 0.1 & $\cdots$ & 1\\
+$d_{n}$ & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$\\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{Slide}
+
+\begin{Slide}{Qual é o problema?}
+\begin{centering}
+\includegraphics[width=8cm]{figuras/classificacaoIncompleto.pdf}
+\end{centering}
+\end{Slide}
+
+\begin{Slide}{Uma solução...}
+\begin{centering}
+\includegraphics[width=8cm]{figuras/classificacaoCompleto.pdf}
+\end{centering}
+\end{Slide}
+
+\begin{Slide}{Processo de trabalho}
+\begin{centering}
+\includegraphics[width=8cm]{figuras/classificacaoCompletoComFerramentas.pdf}
+\end{centering}
+\end{Slide}
+
+\begin{PartSlide}{Minerando ambientes colaborativos de escrita (\textsc{Wiki})}
+\end{PartSlide}
+
+\begin{Slide}{Que informações um Wiki tem?}
+\begin{table*}[htpb]
+\centering
+\tiny
+\vspace{0.2cm}
+\begin{tabular}{|c|c|c|c||c|c|c|c|}
+\toprule
+Documento & Versão & Editor & Data & Documento & Versão & Editor & Data \\
+\midrule
+$d_{1}$ & $1$ & $u_{1}$ & $\cdots$ & $d_{2}$ & $4$ & $u_{7}$ & $\cdots$ \\ 
+$d_{1}$ & $2$ & $u_{2}$ & $\cdots$ & $d_{3}$ & $1$ & $u_{5}$ & $\cdots$ \\ 
+$d_{1}$ & $3$ & $u_{2}$ & $\cdots$ & $d_{3}$ & $2$ & $u_{6}$ & $\cdots$ \\ 
+$d_{1}$ & $4$ & $u_{3}$ & $\cdots$ & $d_{3}$ & $3$ & $u_{6}$ & $\cdots$ \\  
+$d_{1}$ & $5$ & $u_{4}$ & $\cdots$ & $d_{4}$ & $1$ & $u_{8}$ & $\cdots$ \\ 
+$d_{2}$ & $1$ & $u_{4}$ & $\cdots$ & $d_{4}$ & $2$ & $u_{9}$ & $\cdots$ \\ 
+$d_{2}$ & $2$ & $u_{5}$ & $\cdots$ & $d_{5}$ & $1$ & $u_{10}$ & $\cdots$ \\ 
+$d_{2}$ & $3$ & $u_{6}$ & $\cdots$ & $d_{5}$ & $2$ & $u_{11}$ & $\cdots$ \\ 
+\bottomrule
+\end{tabular}
+\label{tab:historico}
+\end{table*}
+\tiny
+Exemplo de histórico de criação e alteração de páginas em um \textsc{Wiki}.
+\end{Slide}
+
+\begin{Slide}{O que eu posso fazer com isto?}
+\begin{figure*}[htpb]
+\centering 
+\resizebox*{1\columnwidth}{0.8\textheight}
+{\includegraphics{figuras/cenarioAtuacao_v2_comSim.pdf}}
+\label{fig:contexto}
+\end{figure*}
+\end{Slide}
+
+\begin{Slide}{Exemplo}
+Execução de uma aplicação usando estes conceitos.
+\end{Slide}
+
+\begin{PartSlide}{Considerações Finais}
+\end{PartSlide}
+
+\begin{Slide}{Considerações Finais}
+\begin{itemize}
+\item Caso sobre conhecimento médico: \textit{Data Mining}.
+\item Agrupamento, classificação e filtragem de documentos:
+  \textit{Text Mining}.
+\item Caso \textsc{Wiki}: \textit{Web Mining}
+\item O que existe em comum nestes casos?
+\end{itemize}
+\end{Slide}
+
+
+\begin{PartSlide}{\textbf{Referências}}
+\end{PartSlide}
+
+%\begin{Slide}{Referências}
+%\begin{itemize}
+%\item McCarthy, J. \textit{What is Artificial Intelligence?} Obtido em
+%  http://www-formal.stanford.edu/jmc/whatisai/whatisai.html
+%\item Russell, S., Norvig P. \textit{Inteligência
+%  Artificial}. Tradução da Segunda Edição. Capítulos
+%01, 07, 08, 09 e 10.
+%\item Tom Mitchell. \textit{Machine Learning}.
+%\end{itemize}
+%\end{Slide}
+
+\nocite{mit1997,rus2003,wit2005}
+
+\bibliographystyle{plain}
+\bibliography{doutorado,mestrado,publicacoes,atech}
+
+\end{document}
+

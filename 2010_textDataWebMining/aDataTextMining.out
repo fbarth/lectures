@@ -1,0 +1,51 @@
+\BOOKMARK [-1][]{1.-1}{Data, Text and Web Mining}{}
+\BOOKMARK [0][]{2.0}{Objetivo}{1.-1}
+\BOOKMARK [-1][]{3.-1}{Import\342ncia do Tema}{}
+\BOOKMARK [0][]{4.0}{Problema}{3.-1}
+\BOOKMARK [0][]{5.0}{Alguns dados...}{3.-1}
+\BOOKMARK [0][]{6.0}{Alguns dados...}{3.-1}
+\BOOKMARK [0][]{7.0}{Por que minerar informa\347\365es?}{3.-1}
+\BOOKMARK [-1][]{9.-1}{Explicitar conhecimento m\351dico a partir de registros m\351dicos}{}
+\BOOKMARK [0][]{10.0}{Diagn\363stico para o uso de lentes de contato}{9.-1}
+\BOOKMARK [-1][]{11.-1}{Quais s\343o os componentes deste sistema?}{}
+\BOOKMARK [0][]{12.0}{Componentes}{11.-1}
+\BOOKMARK [0][]{14.0}{Atributos}{11.-1}
+\BOOKMARK [0][]{15.0}{Dados}{11.-1}
+\BOOKMARK [0][]{18.0}{Extra\347\343o de ``conhecimento''}{11.-1}
+\BOOKMARK [0][]{19.0}{Extra\347\343o de ``conhecimento''}{11.-1}
+\BOOKMARK [0][]{20.0}{\301rvore de decis\343o}{11.-1}
+\BOOKMARK [0][]{21.0}{Algoritmos Indutores de \301rvores de Decis\343o}{11.-1}
+\BOOKMARK [0][]{22.0}{Resultado: Sistema Especialista}{11.-1}
+\BOOKMARK [0][]{23.0}{Sistema Especialista: Regras de Produ\347\343o}{11.-1}
+\BOOKMARK [0][]{25.0}{Um pouco de c\363digo...}{11.-1}
+\BOOKMARK [-1][]{26.-1}{Organizar documentos}{}
+\BOOKMARK [0][]{27.0}{O que fazer com grandes quantidades de documentos?}{26.-1}
+\BOOKMARK [0][]{28.0}{Exemplo de agrupamento}{26.-1}
+\BOOKMARK [0][]{29.0}{Defini\347\365es de Algoritmos de Agrupamento}{26.-1}
+\BOOKMARK [0][]{30.0}{Formato de um documento}{26.-1}
+\BOOKMARK [0][]{31.0}{Atributo/Valor usando vetores}{26.-1}
+\BOOKMARK [0][]{32.0}{Diminuindo a dimensionalidade do vetor}{26.-1}
+\BOOKMARK [0][]{33.0}{Diminuindo ainda mais a dimensionalidade do vetor}{26.-1}
+\BOOKMARK [0][]{34.0}{Atributo/Valor usando vetores}{26.-1}
+\BOOKMARK [0][]{35.0}{Por freq\374\352ncia do termo}{26.-1}
+\BOOKMARK [0][]{36.0}{Conjunto de Exemplos - Atributo/Valor}{26.-1}
+\BOOKMARK [0][]{37.0}{Componentes para uma solu\347\343o...}{26.-1}
+\BOOKMARK [0][]{38.0}{Pr\351-processamento dos documentos: um pouco de c\363digo...}{26.-1}
+\BOOKMARK [0][]{39.0}{Que algoritmo de agrupamento utilizar?}{26.-1}
+\BOOKMARK [0][]{40.0}{Algoritmos para Agrupamento - K-means}{26.-1}
+\BOOKMARK [0][]{41.0}{Algoritmo para Agrupamento - K-means}{26.-1}
+\BOOKMARK [0][]{42.0}{Algoritmos para agrupamento dos documentos - Weka}{26.-1}
+\BOOKMARK [0][]{43.0}{Algoritmo para agrupamento dos documentos - Resultados}{26.-1}
+\BOOKMARK [-1][]{44.-1}{Classifica\347\343o de documentos}{}
+\BOOKMARK [0][]{45.0}{Classifica\347\343o e Filtragem de Not\355cias}{44.-1}
+\BOOKMARK [0][]{46.0}{Conjunto de Exemplos - Atributo/Valor e Classe}{44.-1}
+\BOOKMARK [0][]{47.0}{Qual \351 o problema?}{44.-1}
+\BOOKMARK [0][]{48.0}{Uma solu\347\343o...}{44.-1}
+\BOOKMARK [0][]{49.0}{Processo de trabalho}{44.-1}
+\BOOKMARK [-1][]{50.-1}{Minerando ambientes colaborativos de escrita \(Wiki\)}{}
+\BOOKMARK [0][]{51.0}{Que informa\347\365es um Wiki tem?}{50.-1}
+\BOOKMARK [0][]{52.0}{O que eu posso fazer com isto?}{50.-1}
+\BOOKMARK [0][]{53.0}{Exemplo}{50.-1}
+\BOOKMARK [-1][]{54.-1}{Considera\347\365es Finais}{}
+\BOOKMARK [0][]{55.0}{Considera\347\365es Finais}{54.-1}
+\BOOKMARK [-1][]{56.-1}{Refer\352ncias}{}

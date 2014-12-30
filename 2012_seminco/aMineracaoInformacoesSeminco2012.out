@@ -1,0 +1,66 @@
+\BOOKMARK [-1][]{1.-1}{Uma Introdu\347\343o \340 Minera\347\343o de Informa\347\365es na era do Big Data}{}% 1
+\BOOKMARK [0][]{2.0}{Palestrante}{1.-1}% 2
+\BOOKMARK [0][]{3.0}{Objetivo}{1.-1}% 3
+\BOOKMARK [0][]{4.0}{Sum\341rio}{1.-1}% 4
+\BOOKMARK [-1][]{5.-1}{Import\342ncia do Tema}{}% 5
+\BOOKMARK [0][]{6.0}{Problema}{5.-1}% 6
+\BOOKMARK [0][]{7.0}{Alguns dados...}{5.-1}% 7
+\BOOKMARK [0][]{8.0}{Mais dados...}{5.-1}% 8
+\BOOKMARK [0][]{9.0}{Big Data}{5.-1}% 9
+\BOOKMARK [0][]{10.0}{Mais n\372meros}{5.-1}% 10
+\BOOKMARK [0][]{11.0}{Por que minerar informa\347\365es?}{5.-1}% 11
+\BOOKMARK [-1][]{13.-1}{Explicitar conhecimento m\351dico a partir de registros m\351dicos}{}% 12
+\BOOKMARK [0][]{14.0}{Diagn\363stico para o uso de lentes de contato}{13.-1}% 13
+\BOOKMARK [0][]{15.0}{Banco de dados do ambiente de produ\347\343o}{13.-1}% 14
+\BOOKMARK [-1][]{16.-1}{Por onde come\347ar?}{}% 15
+\BOOKMARK [0][]{17.0}{Responder as seguintes perguntas:}{16.-1}% 16
+\BOOKMARK [0][]{19.0}{Atributos}{16.-1}% 17
+\BOOKMARK [0][]{20.0}{Dados}{16.-1}% 18
+\BOOKMARK [0][]{23.0}{Extra\347\343o de ``conhecimento''}{16.-1}% 19
+\BOOKMARK [0][]{24.0}{Extra\347\343o de ``conhecimento''}{16.-1}% 20
+\BOOKMARK [0][]{25.0}{\301rvore de decis\343o}{16.-1}% 21
+\BOOKMARK [0][]{26.0}{Algoritmos Indutores de \301rvores de Decis\343o}{16.-1}% 22
+\BOOKMARK [0][]{27.0}{Resultado: Sistema Especialista}{16.-1}% 23
+\BOOKMARK [-1][]{28.-1}{Organizar documentos}{}% 24
+\BOOKMARK [0][]{29.0}{O que fazer com grandes quantidades de documentos?}{28.-1}% 25
+\BOOKMARK [0][]{30.0}{Exemplo de classifica\347\343o/agrupamento}{28.-1}% 26
+\BOOKMARK [0][]{31.0}{Etapas}{28.-1}% 27
+\BOOKMARK [-1][]{32.-1}{Pr\351-processamento dos dados}{}% 28
+\BOOKMARK [0][]{33.0}{Formato de um documento}{32.-1}% 29
+\BOOKMARK [0][]{34.0}{Conjunto de Exemplos - Atributo/Valor}{32.-1}% 30
+\BOOKMARK [0][]{35.0}{Atributo/Valor usando vetores}{32.-1}% 31
+\BOOKMARK [0][]{36.0}{Diminuindo a dimensionalidade do vetor}{32.-1}% 32
+\BOOKMARK [0][]{37.0}{Diminuindo ainda mais a dimensionalidade do vetor}{32.-1}% 33
+\BOOKMARK [0][]{38.0}{Atributo/Valor usando vetores}{32.-1}% 34
+\BOOKMARK [0][]{39.0}{Por freq\374\352ncia do termo}{32.-1}% 35
+\BOOKMARK [-1][]{40.-1}{An\341lise do conte\372do publicado no Twitter atrav\351s de algoritmos de agrupamento}{}% 36
+\BOOKMARK [0][]{41.0}{Componentes para uma solu\347\343o...}{40.-1}% 37
+\BOOKMARK [0][]{42.0}{Coletando dados do twitter}{40.-1}% 38
+\BOOKMARK [0][]{44.0}{Componentes para uma solu\347\343o...}{40.-1}% 39
+\BOOKMARK [0][]{45.0}{Defini\347\365es de Algoritmos de Agrupamento}{40.-1}% 40
+\BOOKMARK [0][]{46.0}{Algoritmos para Agrupamento - K-means}{40.-1}% 41
+\BOOKMARK [0][]{47.0}{Algoritmo para Agrupamento - K-means}{40.-1}% 42
+\BOOKMARK [0][]{48.0}{Algoritmo para agrupamento dos twittes - Resultados}{40.-1}% 43
+\BOOKMARK [0][]{49.0}{An\341lise dos agrupamentos \(clusters\)}{40.-1}% 44
+\BOOKMARK [-1][]{51.-1}{Classifica\347\343o de documentos}{}% 45
+\BOOKMARK [0][]{52.0}{An\341lise de Sentimento em mensagens no Twitter}{51.-1}% 46
+\BOOKMARK [0][]{53.0}{Conjunto de Exemplos Rotulados}{51.-1}% 47
+\BOOKMARK [0][]{54.0}{Conjunto de Exemplos - Atributo/Valor e Classe}{51.-1}% 48
+\BOOKMARK [0][]{55.0}{Classificando objetos}{51.-1}% 49
+\BOOKMARK [0][]{56.0}{Utiliza\347\343o}{51.-1}% 50
+\BOOKMARK [0][]{57.0}{Outro Exemplo: Classifica\347\343o e Filtragem de Not\355cias}{51.-1}% 51
+\BOOKMARK [0][]{58.0}{Qual \351 o problema?}{51.-1}% 52
+\BOOKMARK [0][]{59.0}{Processo de trabalho}{51.-1}% 53
+\BOOKMARK [-1][]{60.-1}{Minerando o log de um servidor Web}{}% 54
+\BOOKMARK [0][]{61.0}{Processo de minera\347\343o de padr\365es na Web}{60.-1}% 55
+\BOOKMARK [0][]{62.0}{Exemplo t\355pico de log}{60.-1}% 56
+\BOOKMARK [0][]{63.0}{Pr\351-processamento do log: identifica\347\343o de usu\341rios}{60.-1}% 57
+\BOOKMARK [0][]{64.0}{Pr\351-processamento do log: identifica\347\343o das se\347\365es}{60.-1}% 58
+\BOOKMARK [0][]{65.0}{Matriz de transa\347\365es}{60.-1}% 59
+\BOOKMARK [0][]{66.0}{Matriz de transa\347\365es com meta-informa\347\365es sobre as p\341ginas}{60.-1}% 60
+\BOOKMARK [0][]{67.0}{Regras de Associa\347\343o}{60.-1}% 61
+\BOOKMARK [-1][]{68.-1}{Considera\347\365es Finais}{}% 62
+\BOOKMARK [0][]{69.0}{Processo}{68.-1}% 63
+\BOOKMARK [0][]{70.0}{Considera\347\365es Finais}{68.-1}% 64
+\BOOKMARK [0][]{71.0}{Obrigado!}{68.-1}% 65
+\BOOKMARK [-1][]{72.-1}{Refer\352ncias}{}% 66

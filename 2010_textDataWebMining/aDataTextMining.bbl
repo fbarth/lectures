@@ -1,0 +1,24 @@
+\begin{thebibliography}{1}
+
+\bibitem{mit1997}
+Tom~M. Mitchell.
+\newblock {\em Machine Learning}.
+\newblock McGraw-Hill, 1997.
+
+\bibitem{qui1988}
+J.~R. Quinlan.
+\newblock {\em Knowledge Acquisition for Knowledge-Based Systems}, chapter
+  Simplifying Decision Trees.
+\newblock Academic Press, 1988.
+
+\bibitem{rus2003}
+Stuart~J. Russel and Peter Norvig.
+\newblock {\em Artificial intelligence: a modern approach}.
+\newblock Prentice-Hall, 2 edition, 2003.
+
+\bibitem{wit2005}
+Ian~H. Witten and Eibe Frank.
+\newblock {\em Data Mining: Practical Machine Learning Tools and Techniques}.
+\newblock Elsevier, second edition, 2005.
+
+\end{thebibliography}
