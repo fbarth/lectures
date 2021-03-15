@@ -2,33 +2,33 @@
 \BOOKMARK [-1][]{2.-1}{Exemplos de dispositivos e dados que podem ser coletados}{}% 2
 \BOOKMARK [0][]{3.0}{Celulares}{2.-1}% 3
 \BOOKMARK [0][]{5.0}{Rel\363gios}{2.-1}% 4
-\BOOKMARK [0][]{7.0}{Outras aplica\347\365es \(talvez menos \372teis\)}{2.-1}% 5
-\BOOKMARK [0][]{8.0}{Monitora atividades f\355sicas}{2.-1}% 6
-\BOOKMARK [0][]{10.0}{Disney}{2.-1}% 7
-\BOOKMARK [-1][]{12.-1}{O que podemos fazer com os dados coletados?}{}% 8
-\BOOKMARK [0][]{13.0}{Primeiro exemplo de aplica\347\343o ugu2012}{12.-1}% 9
-\BOOKMARK [0][]{15.0}{Pipeline do processo para reconhecimento de atividades ang2012}{12.-1}% 10
-\BOOKMARK [0][]{16.0}{Dados coletados e filtrados}{12.-1}% 11
-\BOOKMARK [0][]{17.0}{Constru\347\343o do classificador}{12.-1}% 12
-\BOOKMARK [0][]{18.0}{Alguns resultados da an\341lise descritiva}{12.-1}% 13
-\BOOKMARK [0][]{20.0}{Algoritmo utilizado para cria\347\343o do modelo: Random Forest}{12.-1}% 14
-\BOOKMARK [0][]{21.0}{Criando o modelo...}{12.-1}% 15
-\BOOKMARK [0][]{25.0}{Outro modelo}{12.-1}% 16
-\BOOKMARK [0][]{26.0}{Validando o modelo completo com o conjunto de testes}{12.-1}% 17
-\BOOKMARK [0][]{27.0}{Resultados do trabalho original ugu2012}{12.-1}% 18
-\BOOKMARK [0][]{28.0}{Dado o mesmo dataset, ser\341 que \351 poss\355vel determinar quem est\341 realizando a atividade?}{12.-1}% 19
-\BOOKMARK [0][]{29.0}{Segundo exemplo de aplica\347\343o ang2012}{12.-1}% 20
-\BOOKMARK [0][]{31.0}{Adquirindo os dados}{12.-1}% 21
-\BOOKMARK [0][]{32.0}{Separando os dados}{12.-1}% 22
-\BOOKMARK [0][]{33.0}{Construindo o modelo}{12.-1}% 23
-\BOOKMARK [0][]{34.0}{Construindo o modelo}{12.-1}% 24
-\BOOKMARK [0][]{35.0}{Validando o modelo}{12.-1}% 25
-\BOOKMARK [0][]{36.0}{Comparando com o artigo original ang2012}{12.-1}% 26
-\BOOKMARK [-1][]{37.-1}{Kaggle: Accelerometer Biometric Competition}{}% 27
-\BOOKMARK [0][]{38.0}{}{37.-1}% 28
-\BOOKMARK [-1][]{40.-1}{Google Fit, Google Fit SDK, funf}{}% 29
-\BOOKMARK [0][]{41.0}{Google Fit: lan\347ado em 28/10/2014}{40.-1}% 30
-\BOOKMARK [0][]{42.0}{Google Fit SDK}{40.-1}% 31
-\BOOKMARK [0][]{43.0}{funf: Open Sensing Framework}{40.-1}% 32
-\BOOKMARK [-1][]{44.-1}{Perguntas?}{}% 33
-\BOOKMARK [0][]{45.0}{Obrigado!}{44.-1}% 34
+\BOOKMARK [0][]{7.0}{Monitora atividades f\355sicas}{2.-1}% 5
+\BOOKMARK [0][]{9.0}{Disney}{2.-1}% 6
+\BOOKMARK [-1][]{11.-1}{O que podemos fazer com os dados coletados?}{}% 7
+\BOOKMARK [0][]{12.0}{Primeiro exemplo de aplica\347\343o ugu2012}{11.-1}% 8
+\BOOKMARK [0][]{14.0}{Pipeline do processo para reconhecimento de atividades ang2012}{11.-1}% 9
+\BOOKMARK [0][]{15.0}{Dados coletados e filtrados}{11.-1}% 10
+\BOOKMARK [0][]{16.0}{Constru\347\343o do classificador}{11.-1}% 11
+\BOOKMARK [0][]{17.0}{Alguns resultados da an\341lise descritiva}{11.-1}% 12
+\BOOKMARK [0][]{19.0}{Algoritmo utilizado para cria\347\343o do modelo: Random Forest}{11.-1}% 13
+\BOOKMARK [0][]{20.0}{Criando o modelo...}{11.-1}% 14
+\BOOKMARK [0][]{24.0}{Outro modelo}{11.-1}% 15
+\BOOKMARK [0][]{25.0}{Validando o modelo completo com o conjunto de testes}{11.-1}% 16
+\BOOKMARK [0][]{26.0}{Resultados do trabalho original ugu2012}{11.-1}% 17
+\BOOKMARK [0][]{27.0}{Dado o mesmo dataset, ser\341 que \351 poss\355vel determinar quem est\341 realizando a atividade?}{11.-1}% 18
+\BOOKMARK [0][]{28.0}{Segundo exemplo de aplica\347\343o ang2012}{11.-1}% 19
+\BOOKMARK [0][]{30.0}{Adquirindo os dados}{11.-1}% 20
+\BOOKMARK [0][]{31.0}{Separando os dados}{11.-1}% 21
+\BOOKMARK [0][]{32.0}{Construindo o modelo}{11.-1}% 22
+\BOOKMARK [0][]{33.0}{Construindo o modelo}{11.-1}% 23
+\BOOKMARK [0][]{34.0}{Validando o modelo}{11.-1}% 24
+\BOOKMARK [0][]{35.0}{Comparando com o artigo original ang2012}{11.-1}% 25
+\BOOKMARK [-1][]{36.-1}{Kaggle: Accelerometer Biometric Competition}{}% 26
+\BOOKMARK [0][]{37.0}{}{36.-1}% 27
+\BOOKMARK [-1][]{39.-1}{Google Fit, Google Fit SDK, funf}{}% 28
+\BOOKMARK [0][]{40.0}{Google Fit: lan\347ado em 28/10/2014}{39.-1}% 29
+\BOOKMARK [0][]{41.0}{Google Fit SDK}{39.-1}% 30
+\BOOKMARK [0][]{42.0}{funf: Open Sensing Framework}{39.-1}% 31
+\BOOKMARK [-1][]{43.-1}{Perguntas?}{}% 32
+\BOOKMARK [0][]{44.0}{Obrigado!}{43.-1}% 33
+\BOOKMARK [0][]{45.0}{Disclaimer}{43.-1}% 34
