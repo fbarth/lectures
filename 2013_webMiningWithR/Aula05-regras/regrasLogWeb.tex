@@ -1,0 +1,244 @@
+\documentclass[landscape,pdftex]{jomislides}
+
+\slidesmag{5} % escala, qto maior maiores serão as letras/figras/etc.
+
+%\centerslidesfalse
+
+\usepackage{algorithm,algorithmic}
+\usepackage{alltt}
+\usepackage{booktabs}
+\usepackage{listings}
+
+\begin{document}
+
+\title{Criação de regras de associação a partir da navegação de
+  usuários em sites Web} 
+\author{Fabrício J. Barth}
+\institution{Faculdades BandTec e VAGAS Tecnologia}
+\date{Junho de 2013}
+
+\SlideHeader{}
+            {}
+\SlideFooter{\theslidepartheading $\;$ --- $\;$ \theslideheading}
+            {\theslide}
+
+\vpagecolor[white]{white}
+
+
+\subtitle{}
+
+\maketitle
+
+\begin{Slide}{Processo de mineração de padrões na Web}
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.9\columnwidth}{0.73\textheight}
+{\includegraphics{figuras/processo.eps}}
+\end{figure}
+\end{Slide}
+
+\begin{Slide}{Exemplo típico de log}
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.85\columnwidth}{0.8\textheight}
+{\includegraphics{figuras/log.png}}
+\end{figure}
+\end{Slide}
+
+\begin{Slide}{Pré-processamento do log: identificação de usuários}
+\begin{figure}[htbp]
+\centering 
+\resizebox*{1\columnwidth}{0.75\textheight}
+{\includegraphics{figuras/user.png}}
+\end{figure}
+\end{Slide}
+
+\begin{Slide}{Pré-processamento do log: identificação das seções}
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.9\columnwidth}{0.7\textheight}
+{\includegraphics{figuras/secao.png}}
+\end{figure}
+\end{Slide}
+
+\begin{Slide}{Matriz de transações}
+\begin{figure}[htbp]
+\centering 
+\resizebox*{1\columnwidth}{0.8\textheight}
+{\includegraphics{figuras/secao-page.png}}
+\end{figure}
+\end{Slide}
+
+\begin{Slide}{Matriz de transações com meta-informações sobre as páginas}
+\begin{table}[htpb]
+\centering
+\tiny
+%\caption{Exemplo de tabela com as transações dos usuários}
+\vspace{0.2cm}
+\begin{tabular}{|c|c|c|c|c|c|}
+\toprule
+usuário & $categoria_{1}$ & $categoria_{2}$ & $categoria_{3}$ &
+$\cdots$ & $categoria_{m}$\\
+\midrule
+$user_{1}$ & 0 & 2 & 0& $\cdots$ & 1\\
+%\midrule
+$user_{2}$ & 1& 1& 0 & $\cdots$ & 0\\
+%\midrule
+$user_{3}$ & 2& 0 & 1& $\cdots$& 0\\
+%\midrule
+$user_{4}$ &0 & 1& 0& $\cdots$& 0\\
+%\midrule
+$\cdots$ & $\cdots$& $\cdots$& $\cdots$& $\cdots$&$\cdots$\\
+%\midrule
+$user_{n}$ & 1& 1& 0& $\cdots$& 1\\
+\bottomrule
+\end{tabular}
+\label{tab:transacoesUser}
+\end{table}
+\tiny
+\begin{itemize}
+\item Cada página pode pertencer a uma categoria (i.e., tipo de livro,
+  tipo de estabelecimento comercial)
+\item Cada página pode estar associada a uma cidade (i.e., um
+  estabelecimento, uma vaga de emprego)
+\end{itemize}
+\end{Slide}
+
+\begin{Slide}{Regras de Associação}
+\begin{itemize}
+\item \emph{Caso do supermercado} (fralda $\rightarrow$ cerveja)
+\item Quem acessa a página sobre futebol também acessa a página de
+  volei em \emph{90\%} dos casos (futebol $\rightarrow$ volei).
+\item Quem acessa a página de ofertas e a página de material de
+  construção também finaliza a compra em \emph{83\%} dos casos
+  (ofertas $\wedge$ material\_construção $\rightarrow$ compra)
+\end{itemize}
+\end{Slide}
+
+\begin{PartSlide}{Algoritmo para criação de regras}
+\end{PartSlide}
+
+\begin{Slide}{Mineração de itens frequentes}
+\begin{itemize}
+\item Dado:
+\begin{itemize}
+\item um conjunto $A = \{a_{1}, \cdots, a_{m}\}$ de itens,
+\item uma tabela $T = (t_{1}, \cdots, t_{n})$ de transações sobre $A$,
+\item um número $\beta_{min}$ que $0 < \beta_{min} \leq 1$, o
+  \textbf{suporte mínimo}.
+\end{itemize}
+
+\item Objetivo 1:
+\begin{itemize}
+\item encontrar o conjunto de \textbf{itens frequentes}, tais que o
+  \textbf{suporte} de cada conjunto de itens é maior ou igual ao $\beta_{min}$
+  definido pelo usuário.
+\end{itemize}
+\end{itemize}
+\end{Slide}
+
+\begin{Slide}{Exemplo de transações}
+\tiny
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.8\columnwidth}{0.6\textheight}
+{\includegraphics{figuras/dataset.png}}
+\caption{Um banco de dados de transações, com 10 transações, e a
+  enumeração de todos os conjuntos de itens frequentes usando o
+  suporte mínimo = 0,3}
+\label{fig:fig1}
+\end{figure}
+\end{Slide}
+
+\begin{Slide}{Mineração de itens frequentes}
+\begin{itemize}
+\item Objetivo 2:
+\begin{itemize}
+\item encontrar o conjunto de regras de associação com confiança maior
+  que um mínimo definido pelo utilizador.
+\end{itemize}
+\end{itemize}
+\end{Slide}
+
+\begin{Slide}{Suporte e Confiança}
+
+O suporte de um conjunto de itens $Z$, $suporte(Z)$, representa a
+porcentagem de transações na base de dados que contêm os itens de
+$Z$.
+
+O suporte de uma regra de associação $A \rightarrow B$, $suporte(A
+\rightarrow B)$, é dado por $suporte(A \cup B)$. 
+
+\begin{equation}
+confianca(A \rightarrow B) = \frac{P(A \cup B)}{P(A)} = \frac{suporte(A
+\cup B)}{suporte(A)}
+\end{equation}
+\end{Slide}
+
+\begin{Slide}{Exemplo de regras geradas}
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.8\columnwidth}{0.4\textheight}
+{\includegraphics{figuras/regras.png}}
+\caption{Regras extraídas com confiança maior que 0,8}
+\label{fig:fig2}
+\end{figure}
+\end{Slide}
+
+\begin{Slide}{Exemplo básico de uso}
+http://rpubs.com/fbarth/regraAssociacao
+\end{Slide}
+
+\begin{Slide}{Medida Lift}
+%A medidade de interesse \textit{lift} é uma das mais utilizadas para
+%avaliar dependências. 
+Dada uma regra de associação $A \rightarrow B$,
+esta medida indica o quanto mais freqüente torna-se $B$ quando ocorre
+$A$.
+
+\begin{itemize}
+\item Se $Lift(A \rightarrow B) = 1$, então $A$ e $B$ são independentes.
+\item Se $Lift(A \rightarrow B) > 1$, então $A$ e $B$ são positivamente
+independentes.
+\item Se $Lift(A \rightarrow B) < 1$, $A$ e $B$ são negativamente dependentes.
+\end{itemize}
+
+Esta medida varia entre 0 e $\infty$ e possui interpretação simples: \textbf{quanto maior o valor de $Lift$, mais interessante a
+  regra, pois $A$ aumenta $B$}. 
+\end{Slide}
+
+\begin{Slide}{Dados de click-stream de um site da Hungria}
+Dados anonimizados fornecidos por Ferenc Bodon -
+http://fimi.ua.ac.be/data/kosarak.dat
+
+http://rpubs.com/fbarth/regrasAssociacaoClickStream 
+\end{Slide}
+
+\begin{Slide}{Material de \textbf{consulta}}
+  \begin{itemize}
+  \item Fabrício Barth. Mineração de regras de associação em
+    servidores Web com RapidMiner\footnote{http://fbarth.net.br/materiais/webMining/webUsageMining.pdf}.
+  \item Iah H. Witteh and Eibe Frank. Data Mining: Practical Machine
+    Learning Tools and Techniques (Third Edition), 2011.
+  \item Gonçalves. Regras de Associação e suas Medidas de Interesse
+    Objetivas e Subjetivas. INFOCOMP Journal of Computer Science,
+    2005, 4, 26-35.
+
+\newpage
+
+  \item Data Mining Algorithms in R - Apriori
+    Algorithm. http://en.wikibooks.org/wiki/Data\_Mining\_Algorithms\_In\_R/
+    Frequent\_Pattern\_Mining/The\_Apriori\_Algorithm. Acessado
+    em 13 de junho de 2013.
+
+  \item RDataMining.com: Association
+    Rules. http://www.rdatamining.com/examples/association-rules. Acessado
+    em 13 de junho de 2013.
+
+  \end{itemize}
+\end{Slide}
+
+%\bibliographystyle{plain}
+%\bibliography{doutorado,mestrado,publicacoes,atech,posDoutorado,vagas}
+
+\end{document}

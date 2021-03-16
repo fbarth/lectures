@@ -1,0 +1,111 @@
+Classificação de Spam usando o algoritmo J48
+========================================================
+
+O objetivo deste script é demonstrar a criação de um modelo preditivo no formato de árvore de decisão para identificar spam. Para tanto, será utilizado o dataset disponibilizado em __http://archive.ics.uci.edu/ml/datasets/Spambase__
+
+Carga dos dados:
+
+```{r}
+spambase <- read.csv("../data/spambase.data", header=F)
+
+names(spambase) <- c('word_freq_make',
+'word_freq_address',
+'word_freq_all',
+'word_freq_3d',
+'word_freq_our',
+'word_freq_over',
+'word_freq_remove',
+'word_freq_internet',
+'word_freq_order',
+'word_freq_mail',
+'word_freq_receive',
+'word_freq_will',
+'word_freq_people',
+'word_freq_report',
+'word_freq_addresses',
+'word_freq_free',
+'word_freq_business',
+'word_freq_email',
+'word_freq_you',
+'word_freq_credit',
+'word_freq_your',
+'word_freq_font',
+'word_freq_000',
+'word_freq_money',
+'word_freq_hp',
+'word_freq_hpl',
+'word_freq_george',
+'word_freq_650',
+'word_freq_lab',
+'word_freq_labs',
+'word_freq_telnet',
+'word_freq_857',
+'word_freq_data',
+'word_freq_415',
+'word_freq_85',
+'word_freq_technology',
+'word_freq_1999',
+'word_freq_parts',
+'word_freq_pm',
+'word_freq_direct',
+'word_freq_cs',
+'word_freq_meeting',
+'word_freq_original',
+'word_freq_project',
+'word_freq_re',
+'word_freq_edu',
+'word_freq_table',
+'word_freq_conference',
+'char_freq_;',
+'char_freq_(',
+'char_freq_[',
+'char_freq_!',
+'char_freq_$',
+'char_freq_#',
+'capital_run_length_average',
+'capital_run_length_longest',
+'capital_run_length_total', 'spam')
+
+sapply(spambase,class)
+spambase$spam <- as.factor(paste(spambase$spam))
+```
+
+Divisão entre conjunto de treinamento e conjunto de teste.
+
+````{r}
+set.seed(1234)
+ind <- sample(2, nrow(spambase), replace = TRUE, prob = c(0.7, 0.3))
+trainData <- spambase[ind == 1, ]
+testData <- spambase[ind == 2, ]
+
+table(trainData$spam)
+````
+
+Criação do modelo:
+
+````{r}
+library(RWeka)
+spam_model_j48 <- J48(spam ~ ., data= trainData)
+print(spam_model_j48)
+````
+
+Validação do modelo usando o próprio conjunto de treinamento:
+
+````{r}
+t <- table(predict(spam_model_j48), trainData$spam)
+acuracia_treinamento <- (t[1,1] + t[2,2]) / sum(t)
+t
+acuracia_treinamento
+````
+
+Validação do modelo usando o conjunto de testes:
+
+```{r}
+testPred <- predict(spam_model_j48, newdata = testData)
+t <- table(testPred, testData$spam)
+acuracia_teste <-  (t[1,1] + t[2,2]) / sum(t)
+t
+acuracia_teste
+```
+
+Este material faz parte do curso sobre [Web Data Mining com R](http://fbarth.net.br/materiais/webMiningR.html)

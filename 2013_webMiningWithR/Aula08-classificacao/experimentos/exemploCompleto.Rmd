@@ -1,0 +1,89 @@
+Análise de churn
+========================================================
+
+O objetivo deste trabalho é criar um modelo preditivo para identificar atuais clientes que possam deixar de ser clientes da empresa.
+
+```{r}
+library(C50)
+data(churn)
+```
+
+Para alcançar este objetivo será necessário:
+
+* realizar a análise descritiva dos dados, identificando anomalias, valores faltantes e outras características;
+* criar um modelo preditivo usando o algoritmo J48;
+* criar um modelo preditivo usando o algoritmo _random forest_;
+* identificar qual é o modelo com maior acurácia, e;
+* aplicá-lo no conjunto de teste.
+
+Análise descritiva
+------------------
+
+Quais são os tipos dos atributos?
+
+````{r fig.height=6, fig.width=10}
+sapply(churnTrain, class)
+````
+
+Analisando o atributo _state_
+
+````{r fig.height=6, fig.width=10}
+table(churnTrain$state)
+length(levels(churnTrain$state))
+plot(churnTrain$state, churnTrain$churn, xlab="State", ylab="Churn")
+````
+
+Analisando o restante dos atributos categóricos:
+
+````{r fig.height=6, fig.width=10}
+par(mfrow=c(1,3))
+plot(churnTrain$churn, churnTrain$area_code, main="area code")
+plot(churnTrain$churn, churnTrain$international_plan, main="international plan")
+plot(churnTrain$churn, churnTrain$voice_mail_plan, main="voice mail plan")
+````
+
+Analisando os atributos numéricos:
+
+````{r}
+sapply(churnTrain[,c(2,6:19)], summary)
+````
+
+Modelo com o algoritmo J48
+--------------------------
+
+Fazendo __cross-validation__ com J48:
+
+```{r}
+library(RWeka)
+library(ipred)
+set.seed(1234)
+error <- numeric(10)
+for (i in 1:10) error[i] <- errorest(churn ~ ., data = churnTrain, model = J48)$error
+error
+summary(error)
+
+```
+
+````{r}
+print(model)
+````
+
+Gerando o modelo com o todo o conjunto de treinamento:
+
+````{r}
+model <- J48(churn ~ ., data = churnTrain)
+plot(model)
+````
+
+Modelo com o algoritmo _random forest_
+--------------------------------------
+
+
+Comparação dos modelos
+----------------------
+
+
+Validação do modelo com o conjunto de testes
+--------------------------------------------
+
+

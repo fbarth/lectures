@@ -1,0 +1,12 @@
+$ curl -o aboutBrasil.txt https://stream.twitter.com/1/statuses/
+filter.json?track=brasil -u user:passwd
+
+% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 4549k    0 4549k    0     0   5986      0 --:--:--  0:12:58 --:--:--  6226
+
+$ wc -l aboutBrasil.txt 
+1501 aboutBrasil.txt
+
+$ date
+Ter 28 Ago 2012 23:51:10 BRT

@@ -1,0 +1,102 @@
+Identificação de agrupamentos em mensagens do Twitter
+========================================================
+
+
+```{r warning=FALSE}
+Sys.setenv(NOAWT=TRUE)
+library(tm)
+library(Snowball)
+```
+
+Carga do corpus:
+
+````{r}
+load("../data/protesto.rda")
+myCorpus <- Corpus(VectorSource(df$text))
+inspect(myCorpus[1:3])
+````
+
+Aplicando transformações no corpus, removendo acentos e convertendo para caixa baixa:
+
+````{r}
+myCorpus <- tm_map(myCorpus, function(x) iconv(x,to="ASCII//TRANSLIT"))
+myCorpus <- tm_map(myCorpus, tolower)
+````
+
+Removendo pontuação, números e stop-words: 
+
+````{r}
+myCorpus <- tm_map(myCorpus, removePunctuation)
+myCorpus <- tm_map(myCorpus, removeNumbers)
+myCorpus <- tm_map(myCorpus, removeWords, stopwords('portuguese'))
+myCorpus <- tm_map(myCorpus, removeWords, c('mim', 'alguem', 'nao', 'pra'))
+inspect(myCorpus[1:3])
+````
+
+Construindo uma matriz de documentos versus termos:
+
+````{r}
+myTable <- TermDocumentMatrix(myCorpus)
+myTable
+inspect(myTable[1:10,1:10])
+````
+
+Identificando os termos mais frequentes:
+
+````{r}
+findFreqTerms(myTable, lowfreq=20)
+````
+
+Identificando as palavras que estão associadas com a palavra "protestosp" (da hash tag #protestosp):
+
+````{r}
+findAssocs(myTable, 'protestosp', 0.1)
+````
+
+Identificando os agrupamentos
+-----------------------------
+
+Construindo uma matriz termos versus documentos para iniciar o processo de clustering:
+
+````{r}
+# aplicando algoritmo de stemming para reduzir a dimensao da matriz
+myCorpus <- tm_map(myCorpus, stemDocument, language="portuguese")
+inspect(myCorpus[1:3])
+docs_term <- DocumentTermMatrix(myCorpus)
+````
+
+Implementação da função _elbow_ utilizada na identificação do melhor número de agrupamentos.
+
+```{r}
+set.seed(1234)
+elbow <- function(dataset) {
+  wss <- numeric(15)
+  for (i in 1:15) wss[i] <- sum(kmeans(dataset, centers = i, nstart = 100)$withinss)
+    plot(1:15, wss, type = "b", main = "Elbow method", xlab = "Number of Clusters",
+          ylab = "Within groups sum of squares", pch = 8)
+}
+````
+
+Resultado da função _elbow_ e o tempo de processamento:
+
+```{r fig.width=7, fig.height=6}
+system.time(elbow(docs_term))
+````
+
+Execução do _k-means_ com 12 agrupamentos:
+
+````{r}
+cluster_model <- kmeans(docs_term, centers= 12, nstart= 100)
+table(cluster_model$cluster)
+cluster_model$withinss
+````
+
+Visualização dos agrupamentos:
+
+````{r}
+df[cluster_model$cluster == 3, c(1,10)]
+df[cluster_model$cluster == 4, c(1,10)]
+df[cluster_model$cluster == 12, c(1,10)]
+````
+
+Este material faz parte do curso sobre [Web Data Mining com R](http://fbarth.net.br/materiais/webMiningR.html)

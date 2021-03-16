@@ -1,0 +1,1539 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.9.17)  24 APR 2014 16:31
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**\input webDataMiningR.tex
+(./webDataMiningR.tex (./jomislides.cls
+Document Class: jomislides 2002/05/23
+(/usr/local/texlive/2013/texmf-dist/tex/latex/seminar/seminar.cls
+Document Class: seminar 2008/10/15, 1.5
+Document Style: `seminar' v1.5 <2008/10/15> (tvz)
+\slidewidth=\dimen102
+\slideheight=\dimen103
+\footheight=\dimen104
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen105
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/seminar/sem-page.sty)
+\before@document=\toks14
+\after@document=\toks15
+\before@enddocument=\toks16
+\c@slide=\count87
+\slide@count=\count88
+\@slidebox=\box26
+\not@slidebox=\box27
+\slide@hook=\toks17
+\after@slide=\toks18
+\slide@footins=\insert233
+\slide@listdepth=\count89
+\saved@specials=\box28
+\before@newslide=\toks19
+\after@slidepage=\toks20
+\slidesep=\skip43
+\c@note=\count90
+\slideframewidth=\dimen106
+\slideframesep=\dimen107
+\semin=\dimen108
+\semcm=\dimen109
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box29
+\shadowsize=\dimen110
+\@Sbox=\box30
+\do@VerbBox=\toks21
+\the@fancyput=\toks22
+\this@fancyput=\toks23
+\EndVerbatimTokens=\toks24
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read1
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count91
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks25
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/seminar/slidesec.sty
+File `slidesec.sty' v0.9  92/05/07  <tvz>
+\@temptokenb=\toks26
+\c@slidesection=\count92
+\c@slidesubsection=\count93
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen113
+\Hy@linkcounter=\count94
+\Hy@pagecounter=\count95
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count96
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count97
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen114
+\Fld@menulength=\count98
+\Field@Width=\dimen115
+\Fld@charsize=\dimen116
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count99
+\c@Item=\count100
+\c@Hfootnote=\count101
+)
+
+Package hyperref Message: Driver: hpdftex.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count102
+\c@bookmark@seq@number=\count103
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip44
+)
+(./background.sty) (./pagetrans.sty) (./pause.sty)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
+\@enLab=\toks27
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
+\c@tracingmulticols=\count104
+\mult@box=\box31
+\multicol@leftmargin=\dimen117
+\c@unbalance=\count105
+\c@collectmore=\count106
+\doublecol@number=\count107
+\multicoltolerance=\count108
+\multicolpretolerance=\count109
+\full@width=\dimen118
+\page@free=\dimen119
+\premulticols=\dimen120
+\postmulticols=\dimen121
+\multicolsep=\skip45
+\multicolbaselineskip=\skip46
+\partial@page=\box32
+\last@line=\box33
+\mult@rightbox=\box34
+\mult@grightbox=\box35
+\mult@gfirstbox=\box36
+\mult@firstbox=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\c@columnbadness=\count110
+\c@finalcolumnbadness=\count111
+\last@try=\dimen122
+\multicolovershoot=\dimen123
+\multicolundershoot=\dimen124
+\mult@nat@firstbox=\box55
+\colbreak@box=\box56
+\multicol@sort@counter=\count112
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen125
+\extrarowheight=\dimen126
+\NC@list=\toks28
+\extratabsurround=\skip47
+\backup@length=\skip48
+)
+\TX@col@width=\dimen127
+\TX@old@table=\dimen128
+\TX@old@col=\dimen129
+\TX@target=\dimen130
+\TX@delta=\dimen131
+\TX@cols=\count113
+\TX@ftn=\toks29
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks30
+\inpenc@posthook=\toks31
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/seminar/seminar.bug)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/seminar/seminar.bg2
+seminar.bg2: various corrections for the Seminar document class
+added since seminar.bug and few add-ons for overlays
+(Version 2.1 of <May 31, 2002> (D.G.))
+\Seminar@SlideBoxBackground=\box57
+)
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 74.
+Package hyperref Info: Option `colorlinks' set `true' on input line 78.
+Package color Info: Redefining color botcol on input line 83.
+Package color Info: Redefining color medcol on input line 84.
+ (/usr/local/texlive/2013/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+\everycr=\toks32
+\minrowclearance=\skip49
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/algorithms/algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count114
+\c@ALC@line=\count115
+\c@ALC@rem=\count116
+\c@ALC@depth=\count117
+\ALC@tlm=\skip50
+\algorithmicindent=\skip51
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen132
+\lightrulewidth=\dimen133
+\cmidrulewidth=\dimen134
+\belowrulesep=\dimen135
+\belowbottomsep=\dimen136
+\aboverulesep=\dimen137
+\abovetopsep=\dimen138
+\cmidrulesep=\dimen139
+\cmidrulekern=\dimen140
+\defaultaddspace=\dimen141
+\@cmidla=\count118
+\@cmidlb=\count119
+\@aboverulesep=\dimen142
+\@belowrulesep=\dimen143
+\@thisruleclass=\count120
+\@lastruleclass=\count121
+\@thisrulewidth=\dimen144
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count122
+\float@exts=\toks33
+\float@box=\box58
+\@float@everytoks=\toks34
+\@floatcapt=\box59
+)
+\@float@every@algorithm=\toks35
+\c@algorithm=\count123
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count124
+\lst@gtempboxa=\box60
+\lst@token=\toks36
+\lst@length=\count125
+\lst@currlwidth=\dimen145
+\lst@column=\count126
+\lst@pos=\count127
+\lst@lostspace=\dimen146
+\lst@width=\dimen147
+\lst@newlines=\count128
+\lst@lineno=\count129
+\lst@maxwidth=\dimen148
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count130
+\lst@skipnumbers=\count131
+\lst@framebox=\box61
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(./webDataMiningR.aux)
+\openout1 = `webDataMiningR.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+
+(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count132
+\scratchdimen=\dimen149
+\scratchbox=\box62
+\nofMPsegments=\count133
+\nofMParguments=\count134
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count135
+\MPscratchDim=\dimen150
+\MPnumerator=\count136
+\makeMPintoPDFobject=\count137
+\everyMPtoPDFconversion=\toks38
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box63
+Package hyperref Info: Link coloring ON on input line 19.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count138
+)
+LaTeX Info: Redefining \ref on input line 19.
+LaTeX Info: Redefining \pageref on input line 19.
+LaTeX Info: Redefining \nameref on input line 19.
+
+(./webDataMiningR.out) (./webDataMiningR.out)
+\@outlinefile=\write4
+\openout4 = `webDataMiningR.out'.
+
+\c@lstlisting=\count139
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[1
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{1.-1}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.38 \maketitle
+               {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdfte
+x.map}]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 38.
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[2
+
+pdfTeX warning (ext4): destination with the same identifier (name{2.0}) has bee
+n already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.48 \end{Slide}
+                ]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[3
+
+pdfTeX warning (ext4): destination with the same identifier (name{3.0}) has bee
+n already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.72 \end{Slide}
+                ]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[4
+
+pdfTeX warning (ext4): destination with the same identifier (name{4.-1}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.75 \end{PartSlide}
+                    ]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[5
+
+pdfTeX warning (ext4): destination with the same identifier (name{5.0}) has bee
+n already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.82 \newpage
+             ]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 90.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 90.
+
+
+LaTeX Warning: Slide 6 overfull by 4.15483pt on input line 108.
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[6]
+Package epstopdf Info: Source file: <figuras/hierarquia.eps>
+(epstopdf)                    date: 2012-12-16 19:23:56
+(epstopdf)                    size: 8632 bytes
+(epstopdf)             Output file: <figuras/hierarquia-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-04-16 22:12:01
+(epstopdf)                    size: 7729 bytes
+(epstopdf)             Command: <repstopdf --outfile=figuras/hierarquia-eps-con
+verted-to.pdf figuras/hierarquia.eps>
+(epstopdf)             \includegraphics on input line 114.
+Package epstopdf Info: Output file is already uptodate.
+
+<figuras/hierarquia-eps-converted-to.pdf, id=209, 665.48625pt x 263.98625pt>
+File: figuras/hierarquia-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figuras/hierarquia-eps-converted-to.pdf>
+Package pdftex.def Info: figuras/hierarquia-eps-converted-to.pdf used on input 
+line 114.
+(pdftex.def)             Requested size: 665.48462pt x 263.9856pt.
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[7
+
+pdfTeX warning (ext4): destination with the same identifier (name{7.0}) has bee
+n already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.118 \end{Slide}
+                  <./figuras/hierarquia-eps-converted-to.pdf>]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[8
+
+pdfTeX warning (ext4): destination with the same identifier (name{8.0}) has bee
+n already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.170 \end{Slide}
+                 ] <figuras/arvore_iris.png, id=226, 569.12625pt x 560.0925pt>
+File: figuras/arvore_iris.png Graphic file (type png)
+
+<use figuras/arvore_iris.png>
+Package pdftex.def Info: figuras/arvore_iris.png used on input line 188.
+(pdftex.def)             Requested size: 569.12486pt x 560.09113pt.
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[9
+
+pdfTeX warning (ext4): destination with the same identifier (name{9.0}) has bee
+n already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.190 \end{Slide}
+                  <./figuras/arvore_iris.png>]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[10
+
+pdfTeX warning (ext4): destination with the same identifier (name{10.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.220 \end{Slide}
+                 pdfTeX warning (ext4): destination with the same identifier (n
+ame{table.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.220 \end{Slide}
+                 ]
+<figuras/agrupamentoRede.png, id=243, 1178.4025pt x 674.52pt>
+File: figuras/agrupamentoRede.png Graphic file (type png)
+
+<use figuras/agrupamentoRede.png>
+Package pdftex.def Info: figuras/agrupamentoRede.png used on input line 226.
+(pdftex.def)             Requested size: 1178.39963pt x 674.51836pt.
+
+
+LaTeX Warning: Slide 11 overfull by 8.45842pt on input line 228.
+
+
+Overfull \vbox (3.20401pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[11
+
+pdfTeX warning (ext4): destination with the same identifier (name{11.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.228 \end{Slide}
+                  <./figuras/agrupamentoRede.png>]
+
+LaTeX Warning: Slide 12 overfull by 19.57422pt on input line 247.
+
+
+Overfull \vbox (5.52466pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[12
+
+pdfTeX warning (ext4): destination with the same identifier (name{12.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.247 \end{Slide}
+                 ]
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <14.4> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 306.
+
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[13
+
+pdfTeX warning (ext4): destination with the same identifier (name{13.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.317 \end{Slide}
+                 ]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[14
+
+pdfTeX warning (ext4): destination with the same identifier (name{14.-1}) has b
+een already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.321 \end{PartSlide}
+                     ]
+<figuras/componentesAgrupamentoIncompleto.pdf, id=269, 845.1575pt x 597.23125pt
+>
+File: figuras/componentesAgrupamentoIncompleto.pdf Graphic file (type pdf)
+ <use figuras/componentesAgrupamentoIncompleto.pdf>
+Package pdftex.def Info: figuras/componentesAgrupamentoIncompleto.pdf used on i
+nput line 324.
+(pdftex.def)             Requested size: 227.62204pt x 160.8445pt.
+
+
+LaTeX Warning: Slide 15 overfull by 3.7396pt on input line 325.
+
+
+Overfull \vbox (2.0013pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[15
+
+pdfTeX warning (ext4): destination with the same identifier (name{15.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.325 \end{Slide}
+                  <./figuras/componentesAgrupamentoIncompleto.pdf>]
+(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2004/09/05 1.3 listings language file
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2004/09/05 1.3 listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 331.
+
+(./codigos/acessoTwitter.R
+LaTeX Font Info:    Try loading font information for OML+cmss on input line 2.
+LaTeX Font Info:    No file OMLcmss.fd. on input line 2.
+
+
+LaTeX Font Warning: Font shape `OML/cmss/bx/n' undefined
+(Font)              using `OML/cmm/m/it' instead
+(Font)              for symbol `textless' on input line 2.
+
+)
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[16
+
+pdfTeX warning (ext4): destination with the same identifier (name{16.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.332 \end{Slide}
+                 ]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[17
+
+pdfTeX warning (ext4): destination with the same identifier (name{17.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.351 \end{Slide}
+                 ]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[18
+
+pdfTeX warning (ext4): destination with the same identifier (name{18.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.373 \end{Slide}
+                 ]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[19
+
+pdfTeX warning (ext4): destination with the same identifier (name{19.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.387 \end{Slide}
+                 ]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[20
+
+pdfTeX warning (ext4): destination with the same identifier (name{20.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.403 \end{Slide}
+                 ]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[21
+
+pdfTeX warning (ext4): destination with the same identifier (name{21.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.413 \end{Slide}
+                 ]
+
+LaTeX Warning: Slide 22 overfull by 12.7564pt on input line 429.
+
+
+Overfull \vbox (3.1906pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[22
+
+pdfTeX warning (ext4): destination with the same identifier (name{22.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.429 \end{Slide}
+                 ]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[23
+
+pdfTeX warning (ext4): destination with the same identifier (name{23.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.451 \end{Slide}
+                 ]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[24
+
+pdfTeX warning (ext4): destination with the same identifier (name{24.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.456 \end{Slide}
+                 ]
+<figuras/componentesAgrupamento.pdf, id=356, 845.1575pt x 597.23125pt>
+File: figuras/componentesAgrupamento.pdf Graphic file (type pdf)
+
+<use figuras/componentesAgrupamento.pdf>
+Package pdftex.def Info: figuras/componentesAgrupamento.pdf used on input line 
+461.
+(pdftex.def)             Requested size: 199.16928pt x 140.74121pt.
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[25
+
+pdfTeX warning (ext4): destination with the same identifier (name{25.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.463 \end{Slide}
+                  <./figuras/componentesAgrupamento.pdf>]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[26
+
+pdfTeX warning (ext4): destination with the same identifier (name{26.-1}) has b
+een already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.466 \end{PartSlide}
+                     ]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[27
+
+pdfTeX warning (ext4): destination with the same identifier (name{27.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.478 \end{Slide}
+                 ]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[28
+
+pdfTeX warning (ext4): destination with the same identifier (name{28.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.488 \end{Slide}
+                 ]
+<figuras/desenhoKmeans_v2.pdf, id=391, 704.6325pt x 503.8825pt>
+File: figuras/desenhoKmeans_v2.pdf Graphic file (type pdf)
+
+<use figuras/desenhoKmeans_v2.pdf>
+Package pdftex.def Info: figuras/desenhoKmeans_v2.pdf used on input line 494.
+(pdftex.def)             Requested size: 704.6308pt x 503.88127pt.
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[29
+
+pdfTeX warning (ext4): destination with the same identifier (name{29.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.496 \end{Slide}
+                  <./figuras/desenhoKmeans_v2.pdf>]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[30
+
+pdfTeX warning (ext4): destination with the same identifier (name{30.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.511 \end{Slide}
+                 ] <figuras/clusters.png, id=410, 578.16pt x 433.62pt>
+File: figuras/clusters.png Graphic file (type png)
+
+<use figuras/clusters.png>
+Package pdftex.def Info: figuras/clusters.png used on input line 517.
+(pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
+
+
+LaTeX Warning: Slide 31 overfull by 5.99948pt on input line 519.
+
+
+Overfull \vbox (3.99948pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[31
+
+pdfTeX warning (ext4): destination with the same identifier (name{31.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.519 \end{Slide}
+                  <./figuras/clusters.png>]
+<figuras/elbowMethod.png, id=418, 719.68875pt x 522.95375pt>
+File: figuras/elbowMethod.png Graphic file (type png)
+
+<use figuras/elbowMethod.png>
+Package pdftex.def Info: figuras/elbowMethod.png used on input line 526.
+(pdftex.def)             Requested size: 719.687pt x 522.95247pt.
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[32
+
+pdfTeX warning (ext4): destination with the same identifier (name{32.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.530 \end{Slide}
+                  <./figuras/elbowMethod.png>]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[33
+
+pdfTeX warning (ext4): destination with the same identifier (name{33.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.535 \end{Slide}
+                 ] <figuras/email_spam.png, id=430, 108.405pt x 117.43875pt>
+File: figuras/email_spam.png Graphic file (type png)
+
+<use figuras/email_spam.png>
+Package pdftex.def Info: figuras/email_spam.png used on input line 541.
+(pdftex.def)             Requested size: 108.40472pt x 117.43845pt.
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[34
+
+pdfTeX warning (ext4): destination with the same identifier (name{34.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.543 \end{Slide}
+                  <./figuras/email_spam.png>]
+<figuras/social_spam.png, id=437, 711.65875pt x 640.3925pt>
+File: figuras/social_spam.png Graphic file (type png)
+
+<use figuras/social_spam.png>
+Package pdftex.def Info: figuras/social_spam.png used on input line 549.
+(pdftex.def)             Requested size: 711.65701pt x 640.39093pt.
+
+
+LaTeX Warning: Slide 35 overfull by 5.9995pt on input line 551.
+
+
+Overfull \vbox (3.9995pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[35
+
+pdfTeX warning (ext4): destination with the same identifier (name{35.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.551 \end{Slide}
+                  <./figuras/social_spam.png>]
+<figuras/classification_model.png, id=444, 430.60875pt x 118.4425pt>
+File: figuras/classification_model.png Graphic file (type png)
+
+<use figuras/classification_model.png>
+Package pdftex.def Info: figuras/classification_model.png used on input line 55
+8.
+(pdftex.def)             Requested size: 430.60768pt x 118.4422pt.
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[36
+
+pdfTeX warning (ext4): destination with the same identifier (name{36.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.560 \end{Slide}
+                  <./figuras/classification_model.png>]
+<figuras/building_classification_model.png, id=452, 571.13374pt x 402.50375pt>
+File: figuras/building_classification_model.png Graphic file (type png)
+
+<use figuras/building_classification_model.png>
+Package pdftex.def Info: figuras/building_classification_model.png used on inpu
+t line 566.
+(pdftex.def)             Requested size: 571.13235pt x 402.50276pt.
+
+
+LaTeX Warning: Slide 37 overfull by 5.26422pt on input line 568.
+
+
+Overfull \vbox (2.00981pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[37
+
+pdfTeX warning (ext4): destination with the same identifier (name{37.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.568 \end{Slide}
+                  <./figuras/building_classification_model.png>]
+<figuras/arvore.png, id=460, 782.925pt x 343.2825pt>
+File: figuras/arvore.png Graphic file (type png)
+ <use figuras/arvore.png>
+Package pdftex.def Info: figuras/arvore.png used on input line 571.
+(pdftex.def)             Requested size: 271.58632pt x 119.08209pt.
+
+Overfull \hbox (24.69102pt too wide) in paragraph at lines 571--572
+[][]  
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[38
+
+pdfTeX warning (ext4): destination with the same identifier (name{38.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.572 \end{Slide}
+                  <./figuras/arvore.png>]
+<figuras/randomForest.png, id=467, 502.87875pt x 435.6275pt>
+File: figuras/randomForest.png Graphic file (type png)
+
+<use figuras/randomForest.png>
+Package pdftex.def Info: figuras/randomForest.png used on input line 642.
+(pdftex.def)             Requested size: 502.87752pt x 435.62643pt.
+
+
+LaTeX Warning: Slide 39 overfull by 6.34pt on input line 644.
+
+
+Overfull \vbox (3.49057pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[39
+
+pdfTeX warning (ext4): destination with the same identifier (name{39.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.644 \end{Slide}
+                  <./figuras/randomForest.png>]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[40
+
+pdfTeX warning (ext4): destination with the same identifier (name{40.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.648 \end{Slide}
+                 ]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[41
+
+pdfTeX warning (ext4): destination with the same identifier (name{41.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.661 \newpage
+              ]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[42]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[43
+
+pdfTeX warning (ext4): destination with the same identifier (name{43.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.690 \end{Slide}
+                 ]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[44
+
+pdfTeX warning (ext4): destination with the same identifier (name{44.0}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.706 \newpage
+              ]
+
+LaTeX Warning: Slide 45 overfull by 11.07921pt on input line 726.
+
+
+Overfull \vbox (2.25331pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[45]
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \hbox (1.83334pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[46]
+
+*******************************************************
+***** !! PRINT THIS DOCUMENT IN LANDSCAPE MODE !! *****
+*******************************************************
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 748.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 748.
+(./webDataMiningR.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 748.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 748.
+Package rerunfilecheck Info: File `webDataMiningR.out' has not changed.
+(rerunfilecheck)             Checksum: 37C853909B0A0E5F9B6AB5B1E83A9FF7;2690.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 9074 strings out of 493315
+ 127993 string characters out of 6137904
+ 253300 words of memory out of 5000000
+ 12237 multiletter control sequences out of 15000+600000
+ 9774 words of font info for 34 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 41i,16n,41p,238b,2276s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
+r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/lo
+cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
+l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/t
+exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texl
+ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
+/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/
+2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2
+013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/20
+13/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2013
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2013/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2013/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/texlive/2013/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2013/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2013/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2013/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2013/texmf-di
+st/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb>
+Output written on webDataMiningR.pdf (46 pages, 930702 bytes).
+PDF statistics:
+ 615 PDF objects out of 1000 (max. 8388607)
+ 505 compressed objects within 6 object streams
+ 146 named destinations out of 1000 (max. 500000)
+ 407 words of extra memory for PDF output out of 10000 (max. 10000000)
+

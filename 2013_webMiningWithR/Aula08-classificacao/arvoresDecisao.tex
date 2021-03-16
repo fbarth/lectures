@@ -1,0 +1,158 @@
+\documentclass[landscape,pdftex]{jomislides}
+
+\slidesmag{5}
+
+\usepackage{algorithmic}
+\usepackage{alltt}
+\usepackage{booktabs}
+\usepackage{algorithm}
+
+
+\begin{document}
+
+%\input{autorHeaders}
+
+\title{Identificação de spam utilizando Random Forest} 
+\author{Fabrício J. Barth}
+\institution{Falculdade BandTec e VAGAS Tecnologia}
+\date{Junho de 2013}
+
+\SlideHeader{}
+            {}
+\SlideFooter{\theslidepartheading $\;$ --- $\;$ \theslideheading}
+            {\theslide}
+
+\vpagecolor[white]{white}
+
+
+\subtitle{}
+
+\maketitle
+
+%\begin{PartSlide}{Aprendizado de Árvores de Decisão}
+%\end{PartSlide}
+
+%\begin{Slide}{Sumário e Objetivos}
+%\begin{itemize}
+%\item Representação de Árvores de Decisão
+%\item Algoritmo de Aprendizagem ID3
+%\item Identificação de Spam utilizando J48
+%\end{itemize}
+%\end{Slide}
+
+
+\begin{Slide}{Aprendizado de árvores de decisão}
+\includegraphics[width=1\textwidth]{figuras/arvore.png}
+\end{Slide}
+
+\begin{Slide}{Características}
+\begin{itemize}
+\item Representação de árvore de decisão:
+\begin{itemize}
+\item cada nodo interno testa um atributo;
+\item cada aresta correponde a um valor de atributo;
+\item cada nodo folha retorna uma classificação.
+\end{itemize}
+\end{itemize}
+\end{Slide}
+
+\begin{Slide}{Algoritmo ID3}
+\begin{itemize}
+\item O algoritmo ID3 cria uma árvore de uma maneira
+  \emph{top-down} começando com a seguinte pergunta:
+
+
+\begin{itemize}
+\item Qual atributo deve ser testado na raiz da árvore?
+\end{itemize}
+
+\item Para responder esta questão, cada atributo do conjunto de
+  treinamento é avaliado usando um teste estatístico para
+  determinar quão bem o atributo (sozinho) classifica os exemplos
+  de treinamento.
+\end{itemize}
+\end{Slide}
+
+
+\begin{Slide}{}
+\small
+\begin{algorithm}
+\caption{\emph{Top Down Induction of Decision Trees}}
+  \begin{algorithmic}
+	\STATE \textbf{Entrada}: Conjunto de Exemplos $E$. 
+	\STATE \textbf{Saída}: Árvore de Decisão (Hipótese $h$).
+	\STATE \textbf{1} Se todos os exemplos tem o mesmo resultado
+	para a função sendo aprendida, retorna um nodo folha com este
+	valor;
+	\STATE \textbf{2} Cria um nodo de decisão $N$ e escolhe o
+	melhor atributo $A$ para este nodo;
+	\STATE \textbf{3} Para cada valor $V$ possível para $A$: \\
+  \hspace*{0.5cm} \textbf{3.1} cria uma aresta em $N$ para o valor $V$;\\
+  \hspace*{0.5cm} \textbf{3.2} cria um subconjunto $E_{V}$ de exemplos onde $A=V$;\\
+  \hspace*{0.5cm} \textbf{3.3} liga a aresta com o nodo que retorna da aplicação do
+	algoritmo considerando os exemplos $E_{V}$.
+	\STATE \textbf{4} Os passos 1, 2 e 3 são aplicados
+	recursivamente para cada novo subconjunto de exemplos de
+	treinamento.
+  \end{algorithmic}
+\end{algorithm}   
+\end{Slide}
+
+\begin{Slide}{Exemplo de classificação de Spam usando J48}
+O objetivo deste exercício é demonstrar a criação de um modelo preditivo
+no formato de árvore de decisão para identificar spam. Para tanto,
+será utilizado o dataset disponibilizado em
+\textit{http://archive.ics.uci.edu/ml/datasets/Spambase}.
+
+http://rpubs.com/fbarth/classificacaoSpamJ48 
+\end{Slide}
+
+\begin{Slide}{Aprendizado de florestas de árvores de decisão}
+
+\begin{figure}[htbp]
+\centering 
+\resizebox*{0.8\columnwidth}{0.8\textheight}
+{\includegraphics{figuras/randomForest.png}}
+\end{figure}
+\end{Slide}
+
+\begin{Slide}{Exemplo de classificação de Spam usando RandomForest}
+http://rpubs.com/fbarth/classificacaoSpamRandomForest
+\end{Slide}
+
+
+\begin{Slide}{Material de \textbf{consulta}}
+  \begin{itemize}
+  \item Tom Mitchell. Machine Learning, 1997. (Capítulo 3)
+  \item Russel e Norvig. Inteligência Artificial, 2a. edição,
+    capítulo 18.
+  \item \emph{Weka} no \emph{R}:
+    http://cran.r-project.org/web/packages/RWeka/RWeka.pdf.
+
+\newpage
+
+  \item Yanchang Zhao. R and Data Mining: Examples and Case
+    Studies. (Capítulo 4): http://cran.r-project.org/doc/contrib/Zhao\_R\_and\_data\_mining.pdf
+  \item Exemplo de uso de algoritmos indutores de árvore de
+    decisão. http://rpubs.com/fbarth/arvoreDecisao. Acesso em 14 de
+    junho de 2013.
+
+\newpage
+
+  \item Package
+    'randomForest'. http://cran.r-project.org/web/packages/randomForest/randomForest.pdf. Acessado
+    em 14 de junho de 2013.
+  \item Breiman, Leo (2001). "Random Forests". Machine Learning 45
+    (1): 5-32. 
+
+  \item H. Costa, F. Benevenuto, L. Merschmann. Detecting Tip Spam in
+    Location-based Social Networks. In Proceedings of the ACM
+    Symposium on Applied Computing
+    (SAC'13). http://homepages.dcc.ufmg.br/~fabricio/download/sac2013.pdf 
+
+  \end{itemize}
+\end{Slide}
+
+
+\end{document}
+

@@ -1,0 +1,37 @@
+Laboratório sobre Árvores de Decisão - parte 1
+========================================================
+
+Voltando ao problema das flores do tipo iris:
+
+```{r}
+data(iris)
+names(iris)
+table(iris$Species)
+```
+
+Podemos plotar desta maneira:
+
+```{r fig.width=7, fig.height=6}
+plot(iris$Petal.Width,iris$Sepal.Width,pch=19,col=as.numeric(iris$Species)) 
+legend(1,4.5,legend=unique(iris$Species),col=unique(as.numeric(iris$Species)),pch=19)
+```
+
+Dividir o dataset em conjunto de treinamento e teste desta maneira:
+
+````{r}
+set.seed(1234)
+ind <- sample(2, nrow(iris), replace=TRUE, prob=c(0.7, 0.3))
+trainData <- iris[ind==1,]
+testData <- iris[ind==2,]
+````
+
+
+```{r fig.width=7, fig.height=6}
+library(RWeka)
+model <- J48(Species ~ . , data = iris)
+plot(model)
+```
+
+````{r}
+print(model)
+````

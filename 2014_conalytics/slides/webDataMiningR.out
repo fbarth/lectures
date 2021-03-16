@@ -1,0 +1,42 @@
+\BOOKMARK [-1][]{1.-1}{Web Data Mining com R}{}% 1
+\BOOKMARK [0][]{2.0}{Objetivo}{1.-1}% 2
+\BOOKMARK [0][]{3.0}{Sum\341rio}{1.-1}% 3
+\BOOKMARK [-1][]{4.-1}{Conceitos}{}% 4
+\BOOKMARK [0][]{5.0}{Web Data Mining}{4.-1}% 5
+\BOOKMARK [0][]{7.0}{Aprendizagem de m\341quina}{4.-1}% 6
+\BOOKMARK [0][]{8.0}{Exemplo de dataset com classe}{4.-1}% 7
+\BOOKMARK [0][]{9.0}{Exemplo de modelo preditivo}{4.-1}% 8
+\BOOKMARK [0][]{10.0}{Exemplos de aprendizagem n\343o supervisionada}{4.-1}% 9
+\BOOKMARK [0][]{11.0}{Exemplo de identifica\347\343o de grupos em redes sociais}{4.-1}% 10
+\BOOKMARK [0][]{12.0}{Projeto R}{4.-1}% 11
+\BOOKMARK [0][]{13.0}{Web Data Mining e dados n\343o estruturados}{4.-1}% 12
+\BOOKMARK [-1][]{14.-1}{An\341lise de mensagens do twitter usando algoritmos de agrupamento}{}% 13
+\BOOKMARK [0][]{15.0}{Componentes para uma solu\347\343o...}{14.-1}% 14
+\BOOKMARK [0][]{16.0}{Coletando dados do twitter com o R}{14.-1}% 15
+\BOOKMARK [0][]{17.0}{Formato de um documento}{14.-1}% 16
+\BOOKMARK [0][]{18.0}{Conjunto de Exemplos - Atributo/Valor}{14.-1}% 17
+\BOOKMARK [0][]{19.0}{Atributo/Valor usando vetores}{14.-1}% 18
+\BOOKMARK [0][]{20.0}{Remover stop-words}{14.-1}% 19
+\BOOKMARK [0][]{21.0}{Algoritmos de steamming}{14.-1}% 20
+\BOOKMARK [0][]{22.0}{Atributo/Valor usando vetores}{14.-1}% 21
+\BOOKMARK [0][]{23.0}{Por freq\374\352ncia do termo}{14.-1}% 22
+\BOOKMARK [0][]{24.0}{Executando esta etapa no R}{14.-1}% 23
+\BOOKMARK [0][]{25.0}{Componentes para uma solu\347\343o...}{14.-1}% 24
+\BOOKMARK [-1][]{26.-1}{Algoritmos para Agrupamento}{}% 25
+\BOOKMARK [0][]{27.0}{Defini\347\365es de Algoritmos de Agrupamento}{26.-1}% 26
+\BOOKMARK [0][]{28.0}{Algoritmos para Agrupamento - K-means}{26.-1}% 27
+\BOOKMARK [0][]{29.0}{Algoritmo para Agrupamento - K-means}{26.-1}% 28
+\BOOKMARK [0][]{30.0}{Algoritmo K-means}{26.-1}% 29
+\BOOKMARK [0][]{31.0}{}{26.-1}% 30
+\BOOKMARK [0][]{32.0}{Como determinar o melhor k?}{26.-1}% 31
+\BOOKMARK [0][]{33.0}{Agrupamento de mensagens do twitter com o R}{26.-1}% 32
+\BOOKMARK [0][]{34.0}{Desenvolvimento de algoritmos anti-spam}{26.-1}% 33
+\BOOKMARK [0][]{35.0}{}{26.-1}% 34
+\BOOKMARK [0][]{36.0}{Modelos preditivos para classifica\347\343o}{26.-1}% 35
+\BOOKMARK [0][]{37.0}{Desenvolvimento de modelos preditivos para classifica\347\343o}{26.-1}% 36
+\BOOKMARK [0][]{38.0}{Aprendizado de \341rvores de decis\343o}{26.-1}% 37
+\BOOKMARK [0][]{39.0}{Florestas de \341rvores de decis\343o}{26.-1}% 38
+\BOOKMARK [0][]{40.0}{Exemplo de classifica\347\343o de Spam usando RandomForest}{26.-1}% 39
+\BOOKMARK [0][]{41.0}{Considera\347\365es finais}{26.-1}% 40
+\BOOKMARK [0][]{43.0}{Material de consulta}{26.-1}% 41
+\BOOKMARK [0][]{44.0}{Refer\352ncias}{26.-1}% 42

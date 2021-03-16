@@ -1,0 +1,38 @@
+Exemplo de regras de associação em uma base de click-stream
+===========================================================
+
+Pacotes necessários para construir regras de associação:
+
+```{r message=FALSE, warning=FALSE}
+library(arules)
+library(arulesViz)
+```
+
+Leitura do dataset disponibilizado em **http://fimi.ua.ac.be/data/kosarak.dat** por Ferenc Bodon.
+
+````{r}
+tr <- read.transactions("../data/kosarak_mix.dat", format="basket", sep=" ")
+tr
+````
+
+Análise de itens mais frequentes:
+
+```{r fig.width=7, fig.height=6}
+itemFrequencyPlot(tr, support=0.05)
+```
+
+Descoberta das regras:
+
+````{r}
+rules <- apriori(tr, parameter= list(supp=0.05, conf=0.8))
+inspect(rules)
+````
+
+Visualização das regras:
+
+```{r fig.width=7, fig.height=6}
+plot(rules)
+plot(rules, method="graph", control=list(type="items"))
+```
+
+Este material faz parte do curso sobre [Web Data Mining com R](http://fbarth.net.br/materiais/webMiningR.html)

@@ -1,0 +1,466 @@
+\documentclass[landscape,pdftex]{jomislides}
+
+\slidesmag{5} % escala, qto maior maiores serão as letras/figras/etc.
+
+%\centerslidesfalse
+
+%\usepackage{algorithmic}
+\usepackage{alltt}
+\usepackage{booktabs}
+%\usepackage{algorithm}
+
+%
+% Slides
+% ======
+%
+
+
+\begin{document}
+
+%\input{autorHeaders}
+
+\title{Web Data Mining com R: processamento de dados [no R]} 
+\author{Fabrício Jailson Barth}
+\institution{Faculdade BandTec e VAGAS Tecnologia}
+\date{Junho de 2013}
+
+\SlideHeader{}
+            {}
+\SlideFooter{\theslidepartheading $\;$ --- $\;$ \theslideheading}
+            {\theslide}
+
+\vpagecolor[white]{white}
+
+
+\subtitle{}
+
+\maketitle
+
+\begin{Slide}{Sumário}
+\begin{itemize}
+\item Projeto R
+\item O que são \emph{dados}?
+\item Raw data versus dado tratado.
+\item Representação de dados no R.
+\end{itemize}
+\end{Slide}
+
+
+\begin{Slide}{Projeto R}
+\begin{itemize}
+\item http://www.r-project.org/
+\item R Studio - http://www.rstudio.com/
+\item É free
+\item É a linguagem de programação mais popular para análise de dados
+\item Script é melhor que clicar e arastar:
+
+\begin{itemize}
+\item É mais fácil de comunicar.
+\item Reproduzível.
+\item É necessário pensar mais sobre o problema.
+\end{itemize}
+
+\item Existe uma quantia grande de pacotes disponíveis
+
+\end{itemize}
+\end{Slide}
+
+
+\begin{Slide}{Definição de dados}
+"Data are values of qualitative or quantitative variables, belonging
+to a set of items.''
+
+http://en.wikipedia.org/wiki/Data
+
+\newpage
+"Data are values of qualitative or quantitative variables, belonging
+to a \emph{set of items}.''
+
+\emph{Set of items}: conjunto de itens (objetos) de interesse.
+
+\newpage
+
+"Data are values of qualitative or quantitative \emph{variables}, belonging
+to a set of items.''
+
+\emph{variables}: uma medida ou uma característica de um item.
+
+\newpage
+
+"Data are values of \emph{qualitative} or \emph{quantitative} variables, belonging
+to a set of items.''
+
+\emph{qualitative}: cidade de origem, sexo, fez ou não tratamento.
+
+\emph{quantitative}: peso, altura, pressão do sangue.
+
+\end{Slide}
+
+\begin{Slide}{Raw data versus dados processados}
+\textbf{Raw data}
+\begin{itemize}
+\item Fonte original dos dados
+\item Geralmente difícil para fazer algum tipo de análise
+\end{itemize}
+
+http://en.wikipedia.org/wiki/Raw\_Data
+
+\newpage
+
+\textbf{Dados processados}
+\begin{itemize}
+\item Dados que estão prontos para serem analisados
+\item O processamento pode incluir \textit{merging},
+  \textit{subsetting}, \textit{transforming}, etc...
+\item Todas as etapas devem ser registradas
+\end{itemize}
+
+http://en.wikipedia.org/wiki/Compute\_data\_processing
+\end{Slide}
+
+\begin{Slide}{Dados brutos}
+\begin{figure}[htbp]
+\centering 
+\resizebox*{1\columnwidth}{0.9\textheight}
+{\includegraphics{figuras/log.png}}
+\end{figure}
+\end{Slide}
+
+\begin{Slide}{Dados brutos}
+\tiny
+\textit{consideração o projeto da aprendizagem que pensa como didaticamente os
+cursos devem ser projetados com o uso da tecnologia adequada. Isso
+inclui levar em conta os aspectos sociais e culturais envolvidos.
+Deixo abaixo algumas indicações de leitura que tratam isso. Assim,
+acho que dizer que tecnologia deve ser usada de forma responsável, não
+é discutir MOOCs.
+Outro ponto importante é destacar que os MOOCs aparecem no contexto da
+educação aberta e Ciencia aberta e inclui REAs, que costumavam ser
+chamados de objetos de aprendizem e agora discutem-se as licenças, as
+perspectivas de reutilização e de localização;  os periódicos abertos
+que reagem aos altos valores de assinaturas dos periódicos
+tradicionais, as novas formas de publicação incluindo blogs; a
+educação hibrida; os ambientes pessoais de aprendizagem, etc. No geral}
+\end{Slide}
+
+\begin{Slide}{Exemplo de dado processado}
+\begin{table}[htpb]
+\centering
+\tiny
+\caption{Exemplo de tabela com as transações dos usuários}
+\vspace{0.2cm}
+\begin{tabular}{|c|c|c|c|c|c|}
+\toprule
+usuário & $categoria_{1}$ & $categoria_{2}$ & $categoria_{3}$ &
+$\cdots$ & $categoria_{m}$\\
+\midrule
+$user_{1}$ & 0 & 2 & 0& $\cdots$ & 1\\
+%\midrule
+$user_{2}$ & 1& 1& 0 & $\cdots$ & 0\\
+%\midrule
+$user_{3}$ & 2& 0 & 1& $\cdots$& 0\\
+%\midrule
+$user_{4}$ &0 & 1& 0& $\cdots$& 0\\
+%\midrule
+$\cdots$ & $\cdots$& $\cdots$& $\cdots$& $\cdots$&$\cdots$\\
+%\midrule
+$user_{n}$ & 1& 1& 0& $\cdots$& 1\\
+\bottomrule
+\end{tabular}
+\label{tab:transacoesUser}
+\end{table}
+\end{Slide}
+
+\begin{Slide}{Tiny data}
+\begin{itemize}
+\item Cada variável (atributo) forma uma coluna.
+\item Cada observação (exemplo) forma uma linha.
+\item Cada tabela ou arquivo armazena dados sobre uma observação
+  (i.e., pessoas / hospitais)
+\item http://vita.had.co.nz/papers/tidy-data.pdf
+\end{itemize}
+\end{Slide}
+
+\begin{PartSlide}{Big or small - you need the right data}
+\end{PartSlide}
+
+\begin{PartSlide}{Representação de dados no R}
+\end{PartSlide}
+
+\begin{Slide}{Tipos de dados importantes no R}
+\begin{itemize}
+\item Classes: Character, Numeric, Integer, Logical
+\item Objetos: Vector, Matrices, Data frames, List, Factors, Missing
+  Values
+\item Operadores: Subsetting, Logical Subsetting
+\end{itemize}
+\end{Slide}
+
+
+\begin{Slide}{Character}
+\small
+\begin{alltt}
+nome = "maria"
+class(nome)
+
+## [1] "character"
+
+nome
+
+## [1] "maria"
+\end{alltt}
+\end{Slide}
+
+\begin{Slide}{Numeric}
+\small
+\begin{alltt}
+peso = 76.2
+class(peso)
+
+## [1] "numeric"
+
+peso
+
+## [1] 76.2
+\end{alltt}
+\end{Slide}
+
+\begin{Slide}{Integer}
+\small
+\begin{alltt}
+qtdFilhos = 1L
+class(qtdFilhos)
+
+## [1] "integer"
+
+qtdFilhos
+
+## [1] 1
+\end{alltt}
+\end{Slide}
+
+\begin{Slide}{Logical}
+\small
+\begin{alltt}
+temCarro = TRUE
+class(temCarro)
+
+## [1] "logical"
+
+temCarro
+
+## [1] TRUE
+\end{alltt}
+\end{Slide}
+
+\begin{Slide}{Vectors}
+Um conjunto de valores da mesma classe.
+\small
+\begin{alltt}
+pesos = c(76.2, 80.3, 90, 117.4)
+pesos
+
+## [1] 76.2 80.3 90 117.4
+
+nomes = c("maria", "carlos", "pedro")
+nomes
+
+## [1] "maria" "carlos" "pedro"
+\end{alltt}
+\end{Slide}
+
+\begin{Slide}{Lists}
+Um conjunto de valores que pode ser heterogêneo.
+\small
+\begin{alltt}
+pesosV = c(76.2, 80.3, 90, 117.4)
+nomesV = c("maria", "carlos", "pedro", "antônio")
+
+myList <- list(pesos = pesosV, nomes = nomesV)
+myList
+
+## $pesos
+## [1]  76.2  80.3  90.0 117.4
+## 
+## $nomes
+## [1] "maria"   "carlos"  "pedro"   "antônio"
+\end{alltt}
+\end{Slide}
+
+\begin{Slide}{Lists}
+Um conjunto de valores que pode ser heterogêneo.
+\small
+\begin{alltt}
+pesosV = c(76.2, 80.3, 90, 117.4)
+nomesV = c("maria", "carlos", "pedro", "antônio")
+
+myList <- list(pesos = pesosV, nomes = nomesV)
+myList
+
+## $pesos
+## [1]  76.2  80.3  90.0 117.4
+## 
+## $nomes
+## [1] "maria"   "carlos"  "pedro"   "antônio"
+\end{alltt}
+\end{Slide}
+
+\begin{Slide}{Matrizes}
+Vetores com múltiplas dimensões.
+\small
+\begin{alltt}
+myMatrix = matrix(c(1, 2, 3, 4), byrow = T, nrow = 2)
+myMatrix
+
+## [,1] [,2] 
+## [1,] 1 2 
+## [2,] 3 4
+\end{alltt}
+\end{Slide}
+
+\begin{Slide}{Data frames}
+Múltiplos vetores de classes diferentes, mas com o mesmo tamanho.
+\small
+\begin{alltt}
+vector1 = c(188.2, 181.3, 193.4)
+vector2 = c("jeff", "roger", "andrew", "brian")
+myDataFrame = data.frame(heights = vector1, 
+                         firstNames = vector2)
+
+## Error: arguments imply differing number of rows: 3, 4
+
+myDataFrame
+
+## Error: object 'myDataFrame' not found
+\end{alltt}
+\end{Slide}
+
+\begin{Slide}{Data frames}
+\small
+\begin{alltt}
+> vector1 = c(188.2, 181.3, 193.4)
+> vector2 = c("jeff", "roger", "andrew")
+> myDataFrame = data.frame(heights = vector1,
+                           firstNames = vector2)
+> myDataFrame
+
+  heights firstNames
+1   188.2       jeff
+2   181.3      roger
+3   193.4     andrew
+\end{alltt}
+\end{Slide}
+
+\begin{Slide}{Factors}
+Variáveis qualitativas que podem ser incluídas no modelo.
+\small
+\begin{alltt}
+smoker = c("yes", "no", "yes", "yes") 
+smokerFactor = as.factor(smoker)
+smokerFactor
+
+## [1] yes no yes yes 
+## Levels: no yes
+\end{alltt}
+\end{Slide}
+
+\begin{Slide}{Missing values}
+No R os valores faltantes são codificados como NA
+\small
+\begin{alltt}
+vector1 <- c(188.2, 181.3, 193.4, NA) 
+vector1
+
+## [1] 188.2 181.3 193.4 NA
+
+is.na(vector1)
+
+## [1] FALSE FALSE FALSE TRUE
+\end{alltt}
+\end{Slide}
+
+\begin{Slide}{Subsetting}
+\small
+\begin{alltt}
+vector1 = c(188.2, 181.3, 193.4, 192.3)
+vector2 = c("jeff", "roger", "andrew", "brian")
+myDataFrame = data.frame(heights = vector1, 
+                         firstNames = vector2)
+vector1[1]
+
+## [1] 188.2
+
+vector1[c(1, 2, 4)]
+
+## [1] 188.2 181.3 192.3
+\end{alltt}
+\end{Slide}
+
+\begin{Slide}{Subsetting}
+\small
+\begin{alltt}
+myDataFrame[1, 1:2]
+
+## heights firstNames
+## 1 188.2 jeff
+
+myDataFrame$firstNames
+
+## [1] jeff roger andrew brian 
+## Levels: andrew brian jeff roger
+\end{alltt}
+\end{Slide}
+
+\begin{Slide}{Logical subsetting}
+\small
+\begin{alltt}
+myDataFrame[myDataFrame$firstNames == "jeff", ]
+
+## heights firstNames 
+## 1 188.2 jeff
+
+myDataFrame[heights < 190, ]
+
+## heights firstNames
+## 1 188.2 jeff
+## 2 181.3 roger
+## 4 192.3 brian
+\end{alltt}
+\end{Slide}
+
+\begin{PartSlide}{Obtendo dados}
+\end{PartSlide}
+
+
+\begin{Slide}{Dados locais (\textit{toy examples})}
+\begin{alltt}
+help(data)
+data()
+data(iris)
+\end{alltt}
+\end{Slide}
+
+
+\begin{Slide}{Earthquake data (\textit{dados reais})}
+\small
+\begin{alltt}
+fileUrl <-
+"http://earthquake.usgs.gov/earthquakes
+       /catalogs/eqs7day-M1.txt"
+
+download.file(fileUrl,destfile="./data/earthquakeData.csv",
+              method="curl") 
+dateDownloaded <- date()
+
+eData <- read.csv("./data/earthquakeData.csv")
+\end{alltt}
+\tiny
+https://explore.data.gov/Geography-and-Environment/Worldwide-M1-Earthquakes-Past-7-Days/7tag-iwnu
+\end{Slide}
+
+
+\bibliographystyle{plain}
+\bibliography{doutorado,mestrado,publicacoes,atech,posDoutorado,vagas}
+
+\end{document}
+

@@ -1,0 +1,224 @@
+\message{ !name(aIntroducao.tex)}%
+% Problemas para identificação de técnicas
+% de representação de conhecimento
+%
+% by Fabrício Jailson Barth 2006
+%
+
+\documentclass[landscape,pdftex]{jomislides}
+
+\slidesmag{5} % escala, qto maior maiores serão as letras/figras/etc.
+
+%\centerslidesfalse
+
+%\usepackage{algorithmic}
+\usepackage{alltt}
+\usepackage{booktabs}
+%\usepackage{algorithm}
+
+%
+% Slides
+% ======
+%
+
+
+\begin{document}
+
+\message{ !name(aIntroducao.tex) !offset(-3) }
+
+
+%\input{autorHeaders}
+
+\title{Aprendizagem de máquina} 
+\author{Fabrício Jailson Barth}
+\institution{}
+\date{Dezembro de 2012}
+
+\SlideHeader{}
+            {}
+\SlideFooter{\theslidepartheading $\;$ --- $\;$ \theslideheading}
+            {\theslide}
+
+\vpagecolor[white]{white}
+
+
+\subtitle{}
+
+\maketitle
+
+
+%
+%
+%   Introdução
+%
+%
+
+\begin{Slide}{Sumário}
+\begin{itemize}
+\item Exemplos.
+\item O que é Aprendizagem de Máquina?
+\item Hierarquia de aprendizado.
+\item Exemplos de aprendizagem supervisionada (modelos preditivos).
+\item Exemplos de aprendizagem não supervisionada (modelos descritivos).
+\item Referências e exercícios.
+\end{itemize}
+\end{Slide}
+
+
+\begin{Slide}{Exemplos}
+\begin{itemize}
+\item \emph{Data Mining}: grandes bases de dados têm crescido com a
+  automatização de alguns processos e com o advento da Web, por
+  exemplo: web click data, registros médicos, dados biológicos, dados
+  capturados a partir de sensores.
+\item \emph{Aplicações que não podem ser programadas ``na mão''}: por
+  exemplo, helicopteros autônomos, reconhecedor de escrita,
+  processadores de linguagem natural e sistemas de visão computacional.
+\item \emph{Aplicações personalizáveis}: Amazon, Netflix.
+\item Compreensão do aprendizado humano.
+\end{itemize}
+\end{Slide}
+
+
+\begin{Slide}{O que é Aprendizagem de Máquina?}
+\begin{itemize}
+\item Área de estudo que fornece aos computadores a habilidade de
+  aprender sem serem explicitamente programados [Arthur Samuel
+  (1959)].
+\item \emph{Definição bem formada}: \textit{A computer program is
+    said to learn from experience A with respect to some task T and
+    some performance measure P, if its performance on T, as measured
+    by P, improves with experience E} [Tom Mitchell (1998)]. 
+\end{itemize}
+\end{Slide}
+
+
+\begin{Slide}{Exercício}
+O que cada uma das sentenças abaixo descreve segundo a definição do
+Tom Mitchell?
+\begin{itemize}
+\item Classificar e-mails como spam ou não spam.
+\item Verificar quais e-mails o usuário classifica como spam.
+\item O número (ou fração) de e-mails corretamente classificados como
+  spam ou não spam.
+\end{itemize}
+\end{Slide}
+
+\begin{Slide}{Hierarquia de aprendizado}
+\begin{figure}[htbp]
+\centering 
+\resizebox*{1\columnwidth}{0.6\textheight}
+{\includegraphics{hierarquia.eps}}
+%\caption{X}
+%\label{fig:X}
+\end{figure}
+\end{Slide}
+
+
+\begin{Slide}{Exemplos de aprendizagem supervisionada}
+\begin{itemize}
+
+\item Estimar o preço de uma casa.
+\begin{itemize}
+\item atributos: tamanho, posição geográfica, material.
+\item classe: preço (regressão).
+\end{itemize}
+
+\item Determinar se uma pessoa tem câncer benigno ou maligno.
+\begin{itemize}
+\item atributos: tamanho do tumor, formato do tumor, idade do paciente.
+\item classe: tumor benigno ou tumor maligno (classificação).
+\end{itemize}
+
+\newpage
+
+\item Determinar se é um anúncio de vaga válida ou não.
+\begin{itemize}
+\item atributos: quantidade de palavras encontradas no texto,
+  quantidade de palavras proibidas encontradas no texto, quantidade de
+  vagas já criadas pelo usuário, idade do usuário no sistema, quantidade de
+  vagas criadas pelo usuário e moderadas, quantidade de vagas criadas
+  pela empresa, quantidade de vagas criadas pela empresa e moderadas.
+\item classe: vaga válida ou não (classificação).  
+
+\item \textbf{classes}: texto bom, texto regular, texto ruim (classificação com
+  múltiplas classes).
+\end{itemize}
+\end{itemize}
+\end{Slide}
+
+\begin{Slide}{Exemplo de dataset com \emph{classe}}
+{\small
+\begin{table}[htpb]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\toprule
+Idade & Miopia & Astigmat. & Lacrimej. & \textbf{Lentes} \\
+\midrule
+jovem&míope&não&reduzido&\textbf{nenhuma}\\
+jovem&míope&não&normal&\textbf{fraca}\\
+jovem&míope&sim&reduzido&\textbf{nenhuma}\\
+jovem&míope&sim&normal&\textbf{forte}\\
+$\cdots$& $\cdots$& $\cdots$ & $\cdots$ & $\cdots$ \\
+adulto&míope&não&reduzido&\textbf{nenhuma}\\
+\bottomrule
+\end{tabular}
+\end{table}
+}
+\end{Slide}
+
+\begin{Slide}{Exercícios}
+Que problema deve ser tratado como problema de regressão e que
+problema deve ser tratado como problema de classificação?
+\begin{itemize}
+\item A sua empresa possui 1.000 itens idênticos em estoque. Você quer
+  predizer quantos destes itens serão vendidos nos próximos três meses.
+\item Você quer examinar clientes seus e para cada um decidir se ele
+  irá pagar todo o financiamento ou não.
+\end{itemize}
+\end{Slide}
+
+
+\begin{Slide}{Exemplos de aprendizagem não supervisionada}
+\begin{itemize}
+\item Dado um grupo de pessoas e suas cone
+\begin{itemize}
+\item
+\end{itemize}
+\item Agrupamento de textos similares.
+\item Análise de redes sociais.
+\item Segmentação de mercado.
+\end{itemize}
+\end{Slide}
+
+
+\begin{Slide}{Exercícios}
+Quais dos problemas abaixo você iria resolver com uma abordagem não
+supervisionada de aprendizagem?
+\begin{itemize}
+\item Dado e-mails rotulados como spam e não spam, desenvolver um
+  filtro de spam.
+\item Dado um conjunto de notícias encontradas na Internet, agrupá-las
+  em conjunto de notícias que tratam do mesmo assunto.
+\newpage
+\item Dado uma base de clientes, automaticamente descobrir segmentos
+  de mercado e grupos de clientes que estão em segmentos diferentes.
+\item Dado uma base de pacientes diagnosticados com diabetes ou não,
+  aprender a classificar novos pacientes com diabetes ou não.
+\end{itemize}
+\end{Slide}
+
+
+\begin{Slide}{Material de \textbf{consulta}}
+  \begin{itemize}
+  \item Tom Mitchell. Machine Learning, 1997.
+  \item Iah H. Witteh and Eibe Frank. Data Mining, 2000.
+  \item http://www.ml-class.org
+  \end{itemize}
+\end{Slide}
+
+
+\end{document}
+
+
+\message{ !name(aIntroducao.tex) !offset(-224) }

@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2010/MacPorts 2010_2)
+Capacity: max_strings=500000, hash_size=500000, hash_prime=425003
+The top-level auxiliary file: aDataScience.aux
+The style file: plain.bst
+Database file #1: doutorado.bib
+Database file #2: mestrado.bib
+Database file #3: publicacoes.bib
+Database file #4: atech.bib
+Database file #5: posDoutorado.bib
+Database file #6: vagas.bib
+Warning--to sort, need author or key in eco2010
+Warning--empty author in eco2010
+You've used 2 entries,
+            2118 wiz_defined-function locations,
+            514 strings with 4310 characters,
+and the built_in function-call counts, 518 in all, are:
+= -- 49
+> -- 8
+< -- 1
++ -- 4
+- -- 2
+* -- 34
+:= -- 80
+add.period$ -- 5
+call.type$ -- 2
+change.case$ -- 7
+chr.to.int$ -- 0
+cite$ -- 4
+duplicate$ -- 28
+empty$ -- 51
+format.name$ -- 2
+if$ -- 116
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 3
+newline$ -- 12
+num.names$ -- 2
+pop$ -- 11
+preamble$ -- 1
+purify$ -- 5
+quote$ -- 0
+skip$ -- 19
+stack$ -- 0
+substring$ -- 25
+swap$ -- 7
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 6
+warning$ -- 2
+while$ -- 4
+width$ -- 3
+write$ -- 22
+(There were 2 warnings)
